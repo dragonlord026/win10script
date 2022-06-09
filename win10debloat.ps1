@@ -770,15 +770,19 @@ $vscodium.Add_Click({
 
 $tronfullrun.Add_Click({
 	Write-Host "Creating Restore Point incase something bad happens"
-	$ResultText.text = "`r`n" +"`r`n" + "Installing Essential Tools... Please Wait"
+	$ResultText.text = "`r`n" +"`r`n" + "Downloading Tron... Please Wait"
 	Enable-ComputerRestore -Drive "C:\"
 	Checkpoint-Computer -Description "RestorePoint1" -RestorePointType "MODIFY_SETTINGS"
 
 	Write-Host "Downloading Tron"
-	Import-Module BitsTransfer
-	Start-BitsTransfer -Source "https://bmrf.org/repos/tron/Tron%20v12.0.2%20(2022-01-18).exe" -Destination Tron%20v12.0.2%20(2022-01-18).exe
-	./Tron%20v12.0.2%20(2022-01-18).exe /quiet
-	sudo ./tron.bat [[ -a ] -v -x ]
+
+	Start-BitsTransfer -Source "https://bmrf.org/repos/tron/Tron%20v12.0.2%20(2022-01-18).exe" -Destination "~\Desktop\Tron.exe"
+
+	Write-Host "Running Tron"
+	cd "~\Desktop\"
+	.\Tron.exe
+	mv "~\Desktop\tron\*" "~\Desktop\"
+	~\Desktop\tron.bat -a -v -x
 
 })
 
