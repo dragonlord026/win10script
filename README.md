@@ -15,5 +15,3 @@ Paste this command into Powershell (admin):
 ```
 iwr -useb https://cdn.githubraw.com/dragonlord026/win10script/master/win10debloat.ps1 | iex
 ```
-
-For complete details check out https://christitus.com/debloat-windows-10-2020/
