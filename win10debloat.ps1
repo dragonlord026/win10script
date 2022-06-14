@@ -790,6 +790,13 @@ $tronfullrun.Add_Click({
 	#cmd.exe /c "C:\Users\Tyler\Desktop\tron.bat"
 	Start-Process -FilePath "C:\Users\Tyler\Desktop\tron.bat" -ArgumentList "-e -v -x" -NoNewWindow
 
+	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\integrity_verification"
+	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\tron"
+	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\changelog-v12.0.2-updated-2022-01-18.txt"
+	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\Instructions -- YES ACTUALLY READ THEM.txt"
+	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\Tron.exe"
+
+
 })
 
 $tronmalwarerun.Add_Click({
@@ -813,6 +820,12 @@ $tronmalwarerun.Add_Click({
 	mv -v "~\Desktop\tron\*" "~\Desktop\"
 	#cmd.exe /c "C:\Users\Tyler\Desktop\tron.bat"
 	Start-Process -FilePath "C:\Users\Tyler\Desktop\tron.bat" -ArgumentList "-e -sap -sd -sdc -sor -str -swu -v -x" -NoNewWindow
+
+	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\integrity_verification"
+	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\tron"
+	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\changelog-v12.0.2-updated-2022-01-18.txt"
+	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\Instructions -- YES ACTUALLY READ THEM.txt"
+	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\Tron.exe"
 })
 
 $tronsystemcleanuprun.Add_Click({
@@ -836,6 +849,12 @@ $tronsystemcleanuprun.Add_Click({
 	mv -v "~\Desktop\tron\*" "~\Desktop\"
 	#cmd.exe /c "C:\Users\Tyler\Desktop\tron.bat"
 	Start-Process -FilePath "C:\Users\Tyler\Desktop\tron.bat" -ArgumentList "-e -sa -sdu -v -x" -NoNewWindow
+
+	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\integrity_verification"
+	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\tron"
+	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\changelog-v12.0.2-updated-2022-01-18.txt"
+	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\Instructions -- YES ACTUALLY READ THEM.txt"
+	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\Tron.exe"
 })
 
 $winterminal.Add_Click({
