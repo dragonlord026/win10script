@@ -30,16 +30,16 @@ else{
 
 $Form                            = New-Object system.Windows.Forms.Form
 $Form.ClientSize                 = New-Object System.Drawing.Point(1050,1000)
-$Form.text                       = "Windows Toolbox By Chris Titus"
+$Form.text                       = "Windows Toolbox By Tyler Gadd"
 $Form.StartPosition              = "CenterScreen"
 $Form.TopMost                    = $false
-$Form.BackColor                  = [System.Drawing.ColorTranslator]::FromHtml("#e9e9e9")
-$Form.AutoScaleDimensions     = '192, 192'
-$Form.AutoScaleMode           = "Dpi"
-$Form.AutoSize                = $True
-$Form.AutoScroll              = $True
-$Form.ClientSize              = '1050, 1000'
-$Form.FormBorderStyle         = 'FixedSingle'
+$Form.BackColor                  = [System.Drawing.ColorTranslator]::FromHtml("#282a36")
+$Form.AutoScaleDimensions        = '192, 192'
+$Form.AutoScaleMode              = "Dpi"
+$Form.AutoSize                   = $True
+$Form.AutoScroll                 = $True
+$Form.ClientSize                 = '1050, 1000'
+$Form.FormBorderStyle            = 'FixedSingle'
 
 # GUI Icon
 $iconBase64                      = 'AAABAAMAMDAAAAEAIACoJQAANgAAACAgAAABACAAqBAAAN4lAAAQEAAAAQAgAGgEAACGNgAAKAAAADAAAABgAAAAAQAgAAAAAAAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEZGRgKxsbEBR0dHAq+vrwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8C////Dt3d3Sm/v785wMDAOsDAwDrAwMA6wMDAOsDAwDrBwcE7wMDAPa6urjzm5uYV////AQAAAAAAAAAAAAAAAAAAAAD///8C3NzcIFNTU3O+vr5NVFRUdLy8vCj///8DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////Af///wv///8R////BQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wL///8Xv7+/WYWFhaSPj4+vjo6OrY6Ojq2Ojo6tjo6OrY+Pj62Ojo6wh4eHqGxsbJfMzMwu////AwAAAAAAAAAAAAAAAP///wH///8O8PDwRnZ2dqnU1NRvdHR0ntLS0jn///8EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////BqmpqUF7e3tu////GP///wEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////Af///w67u7tXiIiIua2trcecnJzEnJycwJubm7+bm5u/m5ubv52dncCKiorItra2m/X19Vf39/cg////AwAAAAAAAAAAAAAAAP///wPU1NQuhISEnn9/f7jX19dodnZ2ltPT0zX///8DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////B6mpqVZ7e3uc////Mf///wgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wv///8J////CNjY2Dd8fHyonJycy5ycnM+mpqbSkJCQ2I6OjteOjo7Xjo6O2IuLi9KFhYXFgICAs2hoaKGvr68+////BQAAAAAAAAAAAAAAAP///wPc3Nw1hISEsISEhL/X19drd3d3l9PT0zX///8DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////B7W1tVGFhYW2jIyMhvX19R3///8BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJSUlGW8vLxZ7e3tQNHR0WtfX1/UlJSUz6GhocyJiYnci4uLzYaGhryGhoa7fX19wYGBganU1NRZxsbGRbS0tEXa2toe////AwAAAAAAAAAAAAAAAP///wXi4uI2jIyMrImJicbKysqUf39/ptXV1Tb///8DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////B7W1tVCHh4fDf39/pfz8/CT///8CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFpaWsdra2vQeXl5wYqKisBvb2/dmpqa0ZycnM5qamrcxcXFjfX19Vbj4+Ni6enpX+bm5kX///8a////C////wj///8E////AQAAAAAAAAAA////Au7u7hnAwMBokpKSuI+Pj9OEhITSeHh4u9vb2zj///8DAAAAAAAAAAAAAAAAAAAAAAAAAAD///8B////Cri4uFWJiYnBiIiInf///yH///8BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKqqqmOYmJiHhYWFpnt7e8BwcHDYampq34SEhNppaWnhkJCQs7GxsZF1dXWzhISEqp+fn4i3t7dm1tbWR/X19S7///8d////Ev///wj///8C////A9ra2jN0dHS0k5OTyZKSktSVlZXQf39/utnZ2Tj///8DAAAAAAAAAAAAAAAAAAAAAAAAAAD///8E29vbKqqqqoaOjo7HiIiInv///yP///8DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wv///8V/f39JPX19UKSkpKbDw8P+BQUFPhoaGjVd3d3yGxsbNJoaGjdbGxs4m5ubuBwcHDZdnZ2y4CAgLWRkZGalZWVgb+/v0X///8P////B+fn5zKJiYmvl5eXy5GRkdOVlZXOfn5+utnZ2Tj///8EAAAAAAAAAAAAAAAAAAAAAAAAAAD///8HrKysU3Nzc8uUlJTOkZGRreXl5Un5+fkQ////AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8B////Av///xGKiop+CwsL+goKCvyWlpaY7u7uT7y8vF+goKB/i4uLnnt7e7lxcXHNbW1t2mxsbOFubm7iZGRk4JKSkqrHx8dh5OTkQPDw8FGNjY20l5eXypGRkdOVlZXNgoKCvuLi4kj///8Q////Bv///wP///8BAAAAAAAAAAD///8GvLy8T4KCgsuWlpbQkJCQyHl5eaPl5eUp////AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////Af///w6IiIh8CwsL+goKCvyFhYWC////FP///wr///8S////H/Hx8TLR0dFLsbGxapaWloqCgoKoc3NzwGdnZ85iYmLOaWlpwn9/f7uDg4PPnZ2dzZOTk9WXl5fPhYWF0JSUlKOxsbFr0dHRR/Ly8i3///8b////D////wj///8Ju7u7T4GBgcqWlpbPlpaWy4mJiafv7+8s////AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///w6IiIh8CwsL+goKCvyDg4OA////EP///wH///8B////Af///wP///8G////DP///xb+/v4l6OjoOsXFxVWlpaV0ioqKlHNzc7F5eXnHampq2m5ubuSJiYnZgoKC3319feKIiIjYiIiIyYuLi7OVlZWVqampc8bGxlPv7+89zc3NbIODg86WlpbPlpaWypCQkKv09PQ6////BgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///w6IiIh8CwsL+goKCvyDg4OA////EAAAAAAAAAAAAAAAAAAAAAAAAAAA////Af///wH///8C////BP///wj///8P////Gvr6+izn5+dbRUVF0wYGBv8yMjLth4eHyXl5ec54eHjae3t74IGBgeKEhIThhISE3IWFhdCDg4PCi4uLx4uLi9uWlpbQmZmZy3h4eMmMjIx9////FP///wEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///w6IiIh7CwsL+goKCvyFhYWD////EQAAAAAAAAAAAAAAAAAAAAD///8D////CP///wj///8F////AQAAAAAAAAAA////Af///wT///8sQUFBxQAAAP8xMTHf6OjoZtLS0k+wsLBrl5eXi4WFhal5eXnBdHR003Z2dt13d3fid3d35IqKiuGZmZnTnZ2dzXd3d9aPj4+f////NP///xX///8L////Bv///wP///8B////AQAAAAAAAAAAAAAAAP///wySkpJzDg4O+AcHB/55eXmV////Gf///wEAAAAAAAAAAP///wXj4+MopqamW56enmK4uLg7////CQAAAAAAAAAAAAAAAP///wL///8pQEBAxAEBAf8sLCzZ5ubmPv///wr///8M////Fv39/Sbl5eU7xMTEV6ampnaPj4+Wf39/s319fcxhYWHidnZ23Xx8fNuEhITPkJCQp5ubm4WxsbFmzs7OSO7u7jD///8e////EgAAAAAAAAAAAAAAAP///wm1tbVcGRkZ7QICAv9OTk7D////Ov///wj///8C////BP///x6QkJCEGRkZ7RQUFPNycnKF////Ef///wH///8B////Af///wP///8qQEBAxAEBAf8sLCzZ5eXlPP///wX///8C////Av///wP///8E////Cf///xD///8c/Pz8MczMzHElJSXnBwcH/k5OTt+RkZHBgoKCyoCAgNOAgIDSgoKCx4eHh7SLi4ucjY2NdwAAAAAAAAAAAAAAAP///wTz8/M4PT09ygEBAf8UFBTzj4+PlP///zr///8f////Lru7u3MwMDDeAQEB/xwcHOu0tLRh////Df///xD///8b////Hf///x////9BR0dHygAAAP8wMDDd7OzsUv///yH///8e////HP///xP///8J////FP///x3///8f////JN3d3V8mJibkAAAA/2NjY8b///9p4+PjasbGxoevr6+ilZWVs4WFhcB6enrOeHh4tgAAAAAAAAAAAAAAAP///wH///8Xk5OTgBQUFPMBAQH/FRUV809PT8NwcHCjXFxctyIiIugDAwP/CQkJ/GZmZqj///8q////EIyMjGBRUVGrVFRUrVRUVK5hYWG6LCws6wEBAf8fHx/yYGBgwFVVVa9UVFSuUFBQrXt7e3T///8tc3NzfVFRUa1UVFSuVlZWr15eXsMZGRn0AgIC/zU1NeViYmK6W1tbtGFhYbhnZ2e7ubm5eerq6kW8vLxUpqamVwAAAAAAAAAAAAAAAAAAAAD///8F/Pz8L3Nzc50VFRXyAgIC/wEBAf8EBAT/AgIC/wEBAf8NDQ35VVVVuOLi4kX///8L////FWFhYZgDAwP/AgIC/wICAv8BAQH/AgIC/wICAv8CAgL/AQEB/wICAv8CAgL/AQEB/0hISLX///9IPDw8wQAAAP8CAgL/AgIC/wEBAf8CAgL/AgIC/wEBAf8BAQH/AQEB/wEBAf8FBQX+dXV1hv///xT///8I////CAAAAAAAAAAAAAAAAAAAAAAAAAAA////CPn5+S6ampp6RkZGwCQkJOIaGhrsHx8f5js7O8uDg4OM6urqPP///w3///8C////EHV1dXwqKirYKysr2SsrK9krKyvZKysr2SsrK9krKyvZKysr2SsrK9krKyvZKCgo2mBgYJX///85VlZWoCgoKNorKyvZKysr2SsrK9krKyvZKysr2SsrK9krKyvZKysr2SsrK9ksLCzWhYWFbf///w3///8BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wT///8T9/f3K83NzUK0tLRMw8PDRu/v7zH///8X////Bv///wEAAAAA////Benp6R7f39814eHhOOHh4Tjh4eE44eHhOOHh4Tjh4eE44eHhOOHh4Tjh4eE439/fNuXl5ST///8Q5OTkJ9/f3zfh4eE44eHhOOHh4Tjh4eE44eHhOOHh4Tjh4eE44eHhOOHh4Tjf39806+vrG////wQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///////wAA////////AAD///////8AAP///////wAA////////AAD///////8AAP///////wAA////////AAD///////8AAP///////wAA////////AAD///////8AAP///////wAA////////AAD///////8AAPwA/1///wAA+AH+X/v/AADwAP5f+f8AAPAH/h/5/wAAAH/+H/n/AACAB/wf8f8AAPAAPB/x/wAA+OAcH/D/AAD4/gAP8P8AAPj/8ADw/wAA+P/+AAD/AAD4//44AH8AAPj//j/AHwAA+Ph+P/gBAAD4eP4/+MAAAPgA4AOADwAA/AHAAQAHAAD/A+ABAA8AAP///////wAA////////AAD///////8AAP///////wAA////////AAD///////8AAP///////wAA////////AAD///////8AAP///////wAA////////AAD///////8AAP///////wAA////////AAD///////8AACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD29vYJubm5JK6uri2vr68tr6+vLbCwsC2srKwvo6OjJv///wQAAAAAAAAAAAAAAACtra0Td3d3RHt7e0Senp4YAAAAAAAAAAAAAAAAAAAAAP///wHq6uoM7u7uBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/v7+DKqqql+YmJiql5eXrZaWlqyWlpaslZWVr5WVlaWfn59j////CwAAAAAAAAAA////BbCwsE+RkZGVlJSUhbKysi8AAAAAAAAAAAAAAAAAAAAA////BoyMjFioqKg5////AQAAAAAAAAAAAAAAAAAAAAAAAAAA////Cf///waqqqpIj4+PvKOjo8+WlpbSkJCQ0pCQkNKOjo7Lj4+Pr5mZmWzp6ekPAAAAAAAAAAD///8NjIyMjJSUlKSZmZmAs7OzLAAAAAAAAAAAAAAAAAAAAAD///8GlZWVcJeXl4Hi4uITAAAAAAAAAAAAAAAAAAAAAAAAAAB9fX2DpKSkbY6Ojp2FhYXUlpaW0o+Pj8OcnJydlZWVoKCgoHbBwcE7qKioLu7u7gcAAAAAAAAAAPn5+Rebm5uRlZWVv5CQkKO7u7stAAAAAAAAAAAAAAAAAAAAAP///waZmZlzh4eHq9bW1h8AAAAAAAAAAAAAAAAAAAAAAAAAAIGBgYyBgYGqfHx8xnV1ddt4eHjdiIiIuKysrIiUlJSUr6+vasPDwz7n5+cj/v7+Ev///wX///8BoqKiTI6Ojr6SkpLUhISEvcPDwy4AAAAAAAAAAAAAAAAAAAAA3d3dG5qampCNjY2n3NzcHgAAAAAAAAAAAAAAAAAAAAAAAAAA////DPDw8BvGxsZRKysr3iwsLOqKioqre3t7tHFxcc5xcXHWdHR0z319fbuBgYGfs7OzUf///xasrKxckZGRyJSUlNGJiYm6xMTEMAAAAAAAAAAAAAAAAAAAAACqqqo/hoaGxpOTk7uwsLBQ////BQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM7OzioiIiLZIiIi3djY2Dzk5OQivr6+PqSkpF+Pj4+EgICAqHR0dMN3d3e8f39/n4qKiqqSkpLOlpaW0oyMjMmkpKR9v7+/P9/f3yL9/f0P////BbGxsT+Li4vHk5OTzpKSkoP///8LAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAz8/PKyIiItkgICDcysrKLAAAAAAAAAAA////Av///wn39/cW09PTK66urkmUlJRsiYmJkWxsbMtUVFToe3t73X5+ft2GhobQi4uLuZSUlJekpKRxqqqqfo2Njc2VlZXNlpaWluDg4BoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADPz88qIiIi2SEhIdzLy8suAAAAAAAAAAD///8B////Bf///wb///8BAAAAAP///wT///8UVlZWngsLC/5/f3+foaGheYuLi5yCgoK7fn5+0Xx8fNt6enrfjIyM3JmZmc98fHzGvr6+Tf///xD///8G////AQAAAAAAAAAAAAAAAODg4CQoKCjQGxsb6ba2tkMAAAAAAAAAAOrq6hhqampzXV1df8LCwh8AAAAAAAAAAP///whPT0+WDAwM/XZ2dmr///8H/f39EN7e3iO6uro+o6OjYJSUlIV3d3fATk5O6HNzc9mLi4u4kJCQlpycnHWurq5Surq6NQAAAAAAAAAA////E0hISKkKCgr+ZGRkmvf39yr///8ihISEehQUFPMvLy/M3d3dJ////xD///8Z////IltbW6ENDQ39hoaGeP///xv///8Y////Df///w7///8c////JoGBgYoKCgr9cXFxury8vImjo6Ook5OTuoaGhr19fX2uAAAAAAAAAAD///8DmpqaVB8fH+QODg74NDQ0zTk5OcYTExPzFRUV8H5+fnD///8WVVVVhi4uLsY0NDTGJSUl5wYGBv4uLi7dMjIyxS8vL8R8fHxsc3Nzci8vL8QyMjLFLCws3gUFBf4pKSnkOjo6yTs7O9F1dXWY1dXVP6qqqkQAAAAAAAAAAAAAAAD///8Ojo6OYTY2NsMYGBjpFhYW7C4uLsx9fX1y/Pz8FP///xBISEicHBwc5R0dHeIdHR3gHx8f3x0dHeEdHR3iHh4e4nJycn1oaGiFHR0d4x0dHeIdHR3hHx8f3x0dHeAdHR3iHBwc5E5OTpD///8LAAAAAAAAAAAAAAAAAAAAAAAAAAD///8G39/fHqKiojacnJw41dXVIv///wgAAAAA////A8HBwR62trYtuLi4Lbi4uC24uLgtuLi4Lbi4uC22trYsz8/PGMzMzBq2trYtuLi4Lbi4uC24uLgtuLi4Lbi4uC22trYtw8PDHP///wIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//////////////////////////////////////////////////////A/P//gPj+/QP4/vwD+Pz/gDj8/54A/H+f8Ax/n/iAf5/5+B+OefwDwMAwD+HAIA/////////////////////////////////////////////////////8oAAAAEAAAACAAAAABACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+vr4Gp6enHaWlpSCioqIhp6enDgAAAACgoKAJhoaGI5SUlAkAAAAAy8vLAa+vrwcAAAAAAAAAAAAAAADNzc0NoKCgXJqamrKUlJSylJSUn6SkpDcAAAAAnJycPZaWloWlpaUdAAAAALe3twqYmJhPubm5DAAAAAAAAAAAjIyMeICAgLqGhobNlZWVpZycnHCtra0q////BJqammyRkZGwoqKiIAAAAAC5ubkTlJSUg62trR0AAAAAAAAAANbW1hdJSUmRUFBQrJGRkW+Dg4OOgYGBlo+Pj2yRkZGlj4+Px5+fn0++vr4VqqqqMJGRkbOioqI+AAAAAAAAAAAAAAAANjY2gTU1NYQAAAAA19fXDq2trSWcnJw2a2triVhYWM+Ojo6ei4uLnYyMjKGOjo7OlJSUdtTU1A7v7+8EAAAAAEFBQW8yMjKtpaWlJ0NDQ31TU1Nc1NTUD0xMTGwyMjKyra2tLqKiojiUlJRmUlJSynR0dLuWlpaPlJSUcQAAAAB+fn4jMjIyrC0tLcQwMDCzfHx8Pj4+Po8pKSnIIiIi0zIyMq9hYWFzMTExryEhIdMuLi7NTk5Oo6ampjgAAAAAAAAAAJCQkBJcXFwqiIiIFN7e3gNra2sfY2NjJmdnZyVkZGQliIiIGWNjYyVnZ2clYmJiJmhoaB28vLwCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAD//wAA//8AAP//AAD//wAAx38AAI93AACSdwAAngcAAN9xAADEIQAA//8AAP//AAD//wAA//8AAP//AAA='
@@ -62,6 +62,13 @@ $brave.width                     = 212
 $brave.height                    = 30
 $brave.location                  = New-Object System.Drawing.Point(4,426)
 $brave.Font                      = New-Object System.Drawing.Font('Consolas',12)
+$brave.BackColor                 = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$brave.ForeColor                 = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$brave.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$brave.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$brave.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$brave.FlatAppearance.BorderSize  = 1
+
 
 $firefox                         = New-Object system.Windows.Forms.Button
 $firefox.text                    = "Firefox"
@@ -69,6 +76,13 @@ $firefox.width                   = 212
 $firefox.height                  = 30
 $firefox.location                = New-Object System.Drawing.Point(4,461)
 $firefox.Font                    = New-Object System.Drawing.Font('Consolas',12)
+$firefox.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$firefox.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$firefox.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$firefox.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$firefox.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$firefox.FlatAppearance.BorderSize = 1
+
 
 $7zip                            = New-Object system.Windows.Forms.Button
 $7zip.text                       = "7-Zip"
@@ -76,6 +90,12 @@ $7zip.width                      = 211
 $7zip.height                     = 30
 $7zip.location                   = New-Object System.Drawing.Point(4,102)
 $7zip.Font                       = New-Object System.Drawing.Font('Consolas',12)
+$7zip.BackColor                  = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$7zip.ForeColor                  = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$7zip.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$7zip.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$7zip.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$7zip.FlatAppearance.BorderSize = 1
 
 $sharex                          = New-Object system.Windows.Forms.Button
 $sharex.text                     = "ShareX (Screenshots)"
@@ -83,6 +103,12 @@ $sharex.width                    = 212
 $sharex.height                   = 30
 $sharex.location                 = New-Object System.Drawing.Point(3,561)
 $sharex.Font                     = New-Object System.Drawing.Font('Consolas',12)
+$sharex.BackColor                = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$sharex.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$sharex.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$sharex.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$sharex.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$sharex.FlatAppearance.BorderSize = 1
 
 $adobereader                     = New-Object system.Windows.Forms.Button
 $adobereader.text                = "Adobe Reader DC"
@@ -90,6 +116,12 @@ $adobereader.width               = 212
 $adobereader.height              = 30
 $adobereader.location            = New-Object System.Drawing.Point(3,865)
 $adobereader.Font                = New-Object System.Drawing.Font('Consolas',12)
+$adobereader.BackColor           = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$adobereader.ForeColor           = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$adobereader.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$adobereader.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$adobereader.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$adobereader.FlatAppearance.BorderSize = 1
 
 $notepad                         = New-Object system.Windows.Forms.Button
 $notepad.text                    = "Notepad++"
@@ -97,6 +129,12 @@ $notepad.width                   = 212
 $notepad.height                  = 30
 $notepad.location                = New-Object System.Drawing.Point(3,831)
 $notepad.Font                    = New-Object System.Drawing.Font('Consolas',12)
+$notepad.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$notepad.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$notepad.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$notepad.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$notepad.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$notepad.FlatAppearance.BorderSize = 1
 
 $gchrome                         = New-Object system.Windows.Forms.Button
 $gchrome.text                    = "Google Chrome"
@@ -104,6 +142,12 @@ $gchrome.width                   = 212
 $gchrome.height                  = 30
 $gchrome.location                = New-Object System.Drawing.Point(3,494)
 $gchrome.Font                    = New-Object System.Drawing.Font('Consolas',12)
+$gchrome.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$gchrome.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$gchrome.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$gchrome.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$gchrome.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$gchrome.FlatAppearance.BorderSize = 1
 
 $mpc                             = New-Object system.Windows.Forms.Button
 $mpc.text                        = "Media Player Classic"
@@ -111,6 +155,12 @@ $mpc.width                       = 211
 $mpc.height                      = 30
 $mpc.location                    = New-Object System.Drawing.Point(3,697)
 $mpc.Font                        = New-Object System.Drawing.Font('Consolas',12)
+$mpc.BackColor                   = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$mpc.ForeColor                   = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$mpc.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$mpc.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$mpc.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$mpc.FlatAppearance.BorderSize = 1
 
 $vlc                             = New-Object system.Windows.Forms.Button
 $vlc.text                        = "VLC"
@@ -118,6 +168,12 @@ $vlc.width                       = 212
 $vlc.height                      = 30
 $vlc.location                    = New-Object System.Drawing.Point(3,663)
 $vlc.Font                        = New-Object System.Drawing.Font('Consolas',12)
+$vlc.BackColor                   = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$vlc.ForeColor                   = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$vlc.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$vlc.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$vlc.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$vlc.FlatAppearance.BorderSize = 1
 
 $powertoys                       = New-Object system.Windows.Forms.Button
 $powertoys.text                  = "PowerToys"
@@ -125,6 +181,12 @@ $powertoys.width                 = 211
 $powertoys.height                = 30
 $powertoys.location              = New-Object System.Drawing.Point(4,67)
 $powertoys.Font                  = New-Object System.Drawing.Font('Consolas',12)
+$powertoys.BackColor             = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$powertoys.ForeColor             = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$powertoys.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$powertoys.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$powertoys.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$powertoys.FlatAppearance.BorderSize = 1
 
 $winterminal                     = New-Object system.Windows.Forms.Button
 $winterminal.text                = "Windows Terminal"
@@ -132,6 +194,12 @@ $winterminal.width               = 211
 $winterminal.height              = 30
 $winterminal.location            = New-Object System.Drawing.Point(3,32)
 $winterminal.Font                = New-Object System.Drawing.Font('Consolas',12)
+$winterminal.BackColor           = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$winterminal.ForeColor           = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$winterminal.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$winterminal.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$winterminal.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$winterminal.FlatAppearance.BorderSize = 1
 
 $vscode                          = New-Object system.Windows.Forms.Button
 $vscode.text                     = "VS Code"
@@ -139,6 +207,12 @@ $vscode.width                    = 211
 $vscode.height                   = 30
 $vscode.location                 = New-Object System.Drawing.Point(4,797)
 $vscode.Font                     = New-Object System.Drawing.Font('Consolas',12)
+$vscode.BackColor                = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$vscode.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$vscode.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$vscode.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$vscode.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$vscode.FlatAppearance.BorderSize = 1
 
 $Label2                          = New-Object system.Windows.Forms.Label
 $Label2.text                     = "Utilities"
@@ -147,6 +221,8 @@ $Label2.width                    = 25
 $Label2.height                   = 10
 $Label2.location                 = New-Object System.Drawing.Point(89,11)
 $Label2.Font                     = New-Object System.Drawing.Font('Consolas',10,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
+$Label2.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+
 
 $Panel2                          = New-Object system.Windows.Forms.Panel
 $Panel2.height                   = 938
@@ -160,6 +236,7 @@ $Label3.width                    = 230
 $Label3.height                   = 25
 $Label3.location                 = New-Object System.Drawing.Point(349,11)
 $Label3.Font                     = New-Object System.Drawing.Font('Consolas',24)
+$Label3.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 
 $essentialtweaks                 = New-Object system.Windows.Forms.Button
 $essentialtweaks.text            = "Essential Tweaks"
@@ -167,6 +244,12 @@ $essentialtweaks.width           = 205
 $essentialtweaks.height          = 75
 $essentialtweaks.location        = New-Object System.Drawing.Point(0,17)
 $essentialtweaks.Font            = New-Object System.Drawing.Font('Consolas',14)
+$essentialtweaks.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$essentialtweaks.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$essentialtweaks.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$essentialtweaks.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$essentialtweaks.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$essentialtweaks.FlatAppearance.BorderSize = 1
 
 $backgroundapps                  = New-Object system.Windows.Forms.Button
 $backgroundapps.text             = "Disable Background Apps"
@@ -174,6 +257,12 @@ $backgroundapps.width            = 205
 $backgroundapps.height           = 30
 $backgroundapps.location         = New-Object System.Drawing.Point(3,453)
 $backgroundapps.Font             = New-Object System.Drawing.Font('Consolas',12)
+$backgroundapps.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$backgroundapps.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$backgroundapps.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$backgroundapps.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$backgroundapps.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$backgroundapps.FlatAppearance.BorderSize = 1
 
 $cortana                         = New-Object system.Windows.Forms.Button
 $cortana.text                    = "Disable Cortana (Search)"
@@ -181,6 +270,12 @@ $cortana.width                   = 205
 $cortana.height                  = 30
 $cortana.location                = New-Object System.Drawing.Point(2,588)
 $cortana.Font                    = New-Object System.Drawing.Font('Consolas',12)
+$cortana.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$cortana.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$cortana.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$cortana.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$cortana.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$cortana.FlatAppearance.BorderSize = 1
 
 $actioncenter                    = New-Object system.Windows.Forms.Button
 $actioncenter.text               = "Disable Action Center"
@@ -188,6 +283,12 @@ $actioncenter.width              = 205
 $actioncenter.height             = 30
 $actioncenter.location           = New-Object System.Drawing.Point(3,176)
 $actioncenter.Font               = New-Object System.Drawing.Font('Consolas',12)
+$actioncenter.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$actioncenter.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$actioncenter.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$actioncenter.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$actioncenter.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$actioncenter.FlatAppearance.BorderSize = 1
 
 $darkmode                        = New-Object system.Windows.Forms.Button
 $darkmode.text                   = "Dark Mode"
@@ -195,6 +296,12 @@ $darkmode.width                  = 205
 $darkmode.height                 = 30
 $darkmode.location               = New-Object System.Drawing.Point(4,315)
 $darkmode.Font                   = New-Object System.Drawing.Font('Consolas',12)
+$darkmode.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$darkmode.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$darkmode.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$darkmode.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$darkmode.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$darkmode.FlatAppearance.BorderSize = 1
 
 $performancefx                   = New-Object system.Windows.Forms.Button
 $performancefx.text              = "Performance Visual FX"
@@ -202,6 +309,12 @@ $performancefx.width             = 205
 $performancefx.height            = 30
 $performancefx.location          = New-Object System.Drawing.Point(3,419)
 $performancefx.Font              = New-Object System.Drawing.Font('Consolas',12)
+$performancefx.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$performancefx.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$performancefx.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$performancefx.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$performancefx.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$performancefx.FlatAppearance.BorderSize = 1
 
 $onedrive                        = New-Object system.Windows.Forms.Button
 $onedrive.text                   = "Delete & Disable  OneDrive"
@@ -209,6 +322,12 @@ $onedrive.width                  = 205
 $onedrive.height                 = 30
 $onedrive.location               = New-Object System.Drawing.Point(3,521)
 $onedrive.Font                   = New-Object System.Drawing.Font('Consolas',12)
+$onedrive.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$onedrive.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$onedrive.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$onedrive.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$onedrive.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$onedrive.FlatAppearance.BorderSize = 1
 
 $Label15                         = New-Object system.Windows.Forms.Label
 $Label15.text                    = "Windows Update"
@@ -217,6 +336,7 @@ $Label15.width                   = 25
 $Label15.height                  = 10
 $Label15.location                = New-Object System.Drawing.Point(732,11)
 $Label15.Font                    = New-Object System.Drawing.Font('Consolas',24)
+$Label15.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 
 $Panel4                          = New-Object system.Windows.Forms.Panel
 $Panel4.height                   = 328
@@ -229,6 +349,12 @@ $defaultwindowsupdate.width      = 300
 $defaultwindowsupdate.height     = 30
 $defaultwindowsupdate.location   = New-Object System.Drawing.Point(24,26)
 $defaultwindowsupdate.Font       = New-Object System.Drawing.Font('Consolas',14)
+$defaultwindowsupdate.BackColor   = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$defaultwindowsupdate.ForeColor   = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$defaultwindowsupdate.BorderStyle = [System.Windows.Forms.BorderStyle]::FixedSingle
+$defaultwindowsupdate.FlatStyle   = [System.Windows.Forms.FlatStyle]::Flat
+$defaultwindowsupdate.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$defaultwindowsupdate.FlatAppearance.BorderSize = 1
 
 $securitywindowsupdate           = New-Object system.Windows.Forms.Button
 $securitywindowsupdate.text      = "Security Updates Only"
@@ -236,6 +362,12 @@ $securitywindowsupdate.width     = 300
 $securitywindowsupdate.height    = 30
 $securitywindowsupdate.location  = New-Object System.Drawing.Point(24,142)
 $securitywindowsupdate.Font      = New-Object System.Drawing.Font('Consolas',14)
+$securitywindowsupdate.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$securitywindowsupdate.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$securitywindowsupdate.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$securitywindowsupdate.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$securitywindowsupdate.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$securitywindowsupdate.FlatAppearance.BorderSize = 1
 
 $Label16                         = New-Object system.Windows.Forms.Label
 $Label16.text                    = "I recommend doing security updates only."
@@ -244,6 +376,7 @@ $Label16.width                   = 25
 $Label16.height                  = 10
 $Label16.location                = New-Object System.Drawing.Point(62,65)
 $Label16.Font                    = New-Object System.Drawing.Font('Consolas',10)
+$Label16.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 
 $Label17                         = New-Object system.Windows.Forms.Label
 $Label17.text                    = "- Delays Features updates up to 3 years"
@@ -252,6 +385,7 @@ $Label17.width                   = 25
 $Label17.height                  = 10
 $Label17.location                = New-Object System.Drawing.Point(63,84)
 $Label17.Font                    = New-Object System.Drawing.Font('Consolas',10)
+$Label17.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 
 $Label18                         = New-Object system.Windows.Forms.Label
 $Label18.text                    = "- Delays Security updates 4 days"
@@ -260,6 +394,7 @@ $Label18.width                   = 25
 $Label18.height                  = 10
 $Label18.location                = New-Object System.Drawing.Point(63,105)
 $Label18.Font                    = New-Object System.Drawing.Font('Consolas',10)
+$Label18.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 
 $Label19                         = New-Object system.Windows.Forms.Label
 $Label19.text                    = "- Sets Maximum Active Time"
@@ -268,19 +403,27 @@ $Label19.width                   = 25
 $Label19.height                  = 10
 $Label19.location                = New-Object System.Drawing.Point(63,126)
 $Label19.Font                    = New-Object System.Drawing.Font('Consolas',10)
+$Label19.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 
 $PictureBox1                     = New-Object system.Windows.Forms.PictureBox
 $PictureBox1.width               = 343
 $PictureBox1.height              = 136
 $PictureBox1.location            = New-Object System.Drawing.Point(580,850)
-$PictureBox1.imageLocation       = "https://github.com/ChrisTitusTech/win10script/blob/master/titus-toolbox.png?raw=true"
+$PictureBox1.imageLocation       = "https://github.com/dragonlord026/win10script/blob/master/windows-toolbox.png?raw=true"
 $PictureBox1.SizeMode            = [System.Windows.Forms.PictureBoxSizeMode]::zoom
+
 $lightmode                       = New-Object system.Windows.Forms.Button
 $lightmode.text                  = "Light Mode"
 $lightmode.width                 = 205
 $lightmode.height                = 30
 $lightmode.location              = New-Object System.Drawing.Point(3,350)
 $lightmode.Font                  = New-Object System.Drawing.Font('Consolas',12)
+$lightmode.BackColor              = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$lightmode.ForeColor              = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$lightmode.BorderStyle              = [System.Windows.Forms.BorderStyle]::FixedSingle
+$lightmode.FlatStyle                = [System.Windows.Forms.FlatStyle]::Flat
+$lightmode.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$lightmode.FlatAppearance.BorderSize = 1
 
 $Label1                          = New-Object system.Windows.Forms.Label
 $Label1.text                     = "Install"
@@ -289,6 +432,7 @@ $Label1.width                    = 230
 $Label1.height                   = 25
 $Label1.location                 = New-Object System.Drawing.Point(76,11)
 $Label1.Font                     = New-Object System.Drawing.Font('Consolas',24)
+$Label1.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 
 $Panel3                          = New-Object system.Windows.Forms.Panel
 $Panel3.height                   = 381
@@ -301,6 +445,12 @@ $essentialundo.width             = 205
 $essentialundo.height            = 70
 $essentialundo.location          = New-Object System.Drawing.Point(3,102)
 $essentialundo.Font              = New-Object System.Drawing.Font('Consolas',14)
+$essentialundo.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$essentialundo.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$essentialundo.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$essentialundo.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$essentialundo.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$essentialundo.FlatAppearance.BorderSize = 1
 
 $EActionCenter                   = New-Object system.Windows.Forms.Button
 $EActionCenter.text              = "Enable Action Center"
@@ -308,6 +458,12 @@ $EActionCenter.width             = 205
 $EActionCenter.height            = 30
 $EActionCenter.location          = New-Object System.Drawing.Point(3,210)
 $EActionCenter.Font              = New-Object System.Drawing.Font('Consolas',12)
+$EActionCenter.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$EActionCenter.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$EActionCenter.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$EActionCenter.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$EActionCenter.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$EActionCenter.FlatAppearance.BorderSize = 1
 
 $ECortana                        = New-Object system.Windows.Forms.Button
 $ECortana.text                   = "Enable Cortana (Search)"
@@ -315,6 +471,12 @@ $ECortana.width                  = 205
 $ECortana.height                 = 30
 $ECortana.location               = New-Object System.Drawing.Point(3,622)
 $ECortana.Font                   = New-Object System.Drawing.Font('Consolas',12)
+$ECortana.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$ECortana.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$ECortana.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$ECortana.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$ECortana.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$ECortana.FlatAppearance.BorderSize = 1
 
 $RBackgroundApps                 = New-Object system.Windows.Forms.Button
 $RBackgroundApps.text            = "Allow Background Apps"
@@ -322,6 +484,12 @@ $RBackgroundApps.width           = 205
 $RBackgroundApps.height          = 30
 $RBackgroundApps.location        = New-Object System.Drawing.Point(3,487)
 $RBackgroundApps.Font            = New-Object System.Drawing.Font('Consolas',12)
+$RBackgroundApps.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$RBackgroundApps.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$RBackgroundApps.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$RBackgroundApps.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$RBackgroundApps.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$RBackgroundApps.FlatAppearance.BorderSize = 1
 
 $HTrayIcons                      = New-Object system.Windows.Forms.Button
 $HTrayIcons.text                 = "Hide Tray Icons"
@@ -329,6 +497,12 @@ $HTrayIcons.width                = 205
 $HTrayIcons.height               = 30
 $HTrayIcons.location             = New-Object System.Drawing.Point(3,278)
 $HTrayIcons.Font                 = New-Object System.Drawing.Font('Consolas',12)
+$HTrayIcons.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$HTrayIcons.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$HTrayIcons.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$HTrayIcons.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$HTrayIcons.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$HTrayIcons.FlatAppearance.BorderSize = 1
 
 $EClipboardHistory               = New-Object system.Windows.Forms.Button
 $EClipboardHistory.text          = "Enable Clipboard History"
@@ -336,6 +510,12 @@ $EClipboardHistory.width         = 205
 $EClipboardHistory.height        = 30
 $EClipboardHistory.location      = New-Object System.Drawing.Point(3,688)
 $EClipboardHistory.Font          = New-Object System.Drawing.Font('Consolas',12)
+$EClipboardHistory.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$EClipboardHistory.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$EClipboardHistory.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$EClipboardHistory.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$EClipboardHistory.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$EClipboardHistory.FlatAppearance.BorderSize = 1
 
 $ELocation                       = New-Object system.Windows.Forms.Button
 $ELocation.text                  = "Enable Location Tracking"
@@ -343,6 +523,12 @@ $ELocation.width                 = 205
 $ELocation.height                = 30
 $ELocation.location              = New-Object System.Drawing.Point(2,655)
 $ELocation.Font                  = New-Object System.Drawing.Font('Consolas',12)
+$ELocation.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$ELocation.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$ELocation.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$ELocation.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$ELocation.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$ELocation.FlatAppearance.BorderSize = 1
 
 $InstallOneDrive                 = New-Object system.Windows.Forms.Button
 $InstallOneDrive.text            = "Install & Enable OneDrive"
@@ -350,6 +536,12 @@ $InstallOneDrive.width           = 205
 $InstallOneDrive.height          = 30
 $InstallOneDrive.location        = New-Object System.Drawing.Point(2,554)
 $InstallOneDrive.Font            = New-Object System.Drawing.Font('Consolas',12)
+$InstallOneDrive.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$InstallOneDrive.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$InstallOneDrive.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$InstallOneDrive.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$InstallOneDrive.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$InstallOneDrive.FlatAppearance.BorderSize = 1
 
 $everythingsearch                = New-Object system.Windows.Forms.Button
 $everythingsearch.text           = "Everything Search"
@@ -357,6 +549,12 @@ $everythingsearch.width          = 211
 $everythingsearch.height         = 30
 $everythingsearch.location       = New-Object System.Drawing.Point(3,368)
 $everythingsearch.Font           = New-Object System.Drawing.Font('Consolas',12)
+$everythingsearch.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$everythingsearch.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$everythingsearch.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$everythingsearch.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$everythingsearch.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$everythingsearch.FlatAppearance.BorderSize = 1
 
 $sumatrapdf                      = New-Object system.Windows.Forms.Button
 $sumatrapdf.text                 = "Sumatra PDF"
@@ -364,6 +562,12 @@ $sumatrapdf.width                = 212
 $sumatrapdf.height               = 30
 $sumatrapdf.location             = New-Object System.Drawing.Point(4,900)
 $sumatrapdf.Font                 = New-Object System.Drawing.Font('Consolas',12)
+$sumatrapdf.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$sumatrapdf.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$sumatrapdf.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$sumatrapdf.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$sumatrapdf.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$sumatrapdf.FlatAppearance.BorderSize = 1
 
 $vscodium                        = New-Object system.Windows.Forms.Button
 $vscodium.text                   = "VS Codium"
@@ -371,6 +575,12 @@ $vscodium.width                  = 211
 $vscodium.height                 = 30
 $vscodium.location               = New-Object System.Drawing.Point(4,763)
 $vscodium.Font                   = New-Object System.Drawing.Font('Consolas',12)
+$vscodium.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$vscodium.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$vscodium.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$vscodium.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$vscodium.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$vscodium.FlatAppearance.BorderSize = 1
 
 $imageglass                      = New-Object system.Windows.Forms.Button
 $imageglass.text                 = "ImageGlass (Image Viewer)"
@@ -378,6 +588,12 @@ $imageglass.width                = 212
 $imageglass.height               = 30
 $imageglass.location             = New-Object System.Drawing.Point(4,595)
 $imageglass.Font                 = New-Object System.Drawing.Font('Consolas',12)
+$imageglass.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$imageglass.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$imageglass.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$imageglass.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$imageglass.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$imageglass.FlatAppearance.BorderSize = 1
 
 $gimp                            = New-Object system.Windows.Forms.Button
 $gimp.text                       = "GIMP (Image Editor)"
@@ -385,6 +601,12 @@ $gimp.width                      = 212
 $gimp.height                     = 30
 $gimp.location                   = New-Object System.Drawing.Point(4,629)
 $gimp.Font                       = New-Object System.Drawing.Font('Consolas',12)
+$gimp.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$gimp.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$gimp.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$gimp.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$gimp.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$gimp.FlatAppearance.BorderSize = 1
 
 $yourphonefix                    = New-Object system.Windows.Forms.Button
 $yourphonefix.text               = "Your Phone App Fix"
@@ -392,6 +614,12 @@ $yourphonefix.width              = 211
 $yourphonefix.height             = 30
 $yourphonefix.location           = New-Object System.Drawing.Point(5,332)
 $yourphonefix.Font               = New-Object System.Drawing.Font('Consolas',12)
+$yourphonefix.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$yourphonefix.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$yourphonefix.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$yourphonefix.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$yourphonefix.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$yourphonefix.FlatAppearance.BorderSize = 1
 
 $removebloat                     = New-Object system.Windows.Forms.Button
 $removebloat.text                = "Remove MS Store Apps"
@@ -399,6 +627,12 @@ $removebloat.width               = 204
 $removebloat.height              = 34
 $removebloat.location            = New-Object System.Drawing.Point(3,898)
 $removebloat.Font                = New-Object System.Drawing.Font('Consolas',12)
+$removebloat.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$removebloat.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$removebloat.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$removebloat.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$removebloat.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$removebloat.FlatAppearance.BorderSize = 1
 
 $reinstallbloat                  = New-Object system.Windows.Forms.Button
 $reinstallbloat.text             = "Reinstall MS Store Apps"
@@ -406,14 +640,21 @@ $reinstallbloat.width            = 205
 $reinstallbloat.height           = 30
 $reinstallbloat.location         = New-Object System.Drawing.Point(3,813)
 $reinstallbloat.Font             = New-Object System.Drawing.Font('Consolas',12)
+$reinstallbloat.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$reinstallbloat.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$reinstallbloat.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$reinstallbloat.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$reinstallbloat.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$reinstallbloat.FlatAppearance.BorderSize = 1
 
 $WarningLabel                    = New-Object system.Windows.Forms.Label
-$WarningLabel.text               = "Warning! This will break Microsoft Store"
+$WarningLabel.text               = "This will break Microsoft Store"
 $WarningLabel.AutoSize           = $true
 $WarningLabel.width              = 25
 $WarningLabel.height             = 10
 $WarningLabel.location           = New-Object System.Drawing.Point(12,856)
 $WarningLabel.Font               = New-Object System.Drawing.Font('Consolas',8)
+$WarningLabel.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 
 $Label5                          = New-Object system.Windows.Forms.Label
 $Label5.text                     = "Games, Apps, Sysprep, etc."
@@ -422,6 +663,7 @@ $Label5.width                    = 25
 $Label5.height                   = 10
 $Label5.location                 = New-Object System.Drawing.Point(44,877)
 $Label5.Font                     = New-Object System.Drawing.Font('Consolas',8)
+$Label5.ForeColor                 = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 
 $Label7                          = New-Object system.Windows.Forms.Label
 $Label7.text                     = "Document Tools"
@@ -430,6 +672,7 @@ $Label7.width                    = 25
 $Label7.height                   = 10
 $Label7.location                 = New-Object System.Drawing.Point(60,740)
 $Label7.Font                     = New-Object System.Drawing.Font('Consolas',10,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
+$Label7.ForeColor                 = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 
 $Label8                          = New-Object system.Windows.Forms.Label
 $Label8.text                     = "Video and Image Tools"
@@ -438,6 +681,7 @@ $Label8.width                    = 25
 $Label8.height                   = 10
 $Label8.location                 = New-Object System.Drawing.Point(41,537)
 $Label8.Font                     = New-Object System.Drawing.Font('Consolas',10,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
+$Label8.ForeColor                 = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 
 $Label9                          = New-Object system.Windows.Forms.Label
 $Label9.text                     = "Web Browsers"
@@ -446,6 +690,7 @@ $Label9.width                    = 25
 $Label9.height                   = 10
 $Label9.location                 = New-Object System.Drawing.Point(67,406)
 $Label9.Font                     = New-Object System.Drawing.Font('Consolas',10,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
+$Label9.ForeColor                 = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 
 $advancedipscanner               = New-Object system.Windows.Forms.Button
 $advancedipscanner.text          = "Advanced IP Scanner"
@@ -453,6 +698,12 @@ $advancedipscanner.width         = 211
 $advancedipscanner.height        = 30
 $advancedipscanner.location      = New-Object System.Drawing.Point(3,335)
 $advancedipscanner.Font          = New-Object System.Drawing.Font('Consolas',12)
+$advancedipscanner.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$advancedipscanner.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$advancedipscanner.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$advancedipscanner.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$advancedipscanner.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$advancedipscanner.FlatAppearance.BorderSize = 1
 
 $putty                           = New-Object system.Windows.Forms.Button
 $putty.text                      = "PuTTY & WinSCP"
@@ -460,6 +711,12 @@ $putty.width                     = 211
 $putty.height                    = 30
 $putty.location                  = New-Object System.Drawing.Point(3,302)
 $putty.Font                      = New-Object System.Drawing.Font('Consolas',12)
+$putty.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$putty.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$putty.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$putty.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$putty.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$putty.FlatAppearance.BorderSize = 1
 
 $etcher                          = New-Object system.Windows.Forms.Button
 $etcher.text                     = "Etcher USB Creator"
@@ -467,6 +724,12 @@ $etcher.width                    = 211
 $etcher.height                   = 30
 $etcher.location                 = New-Object System.Drawing.Point(3,269)
 $etcher.Font                     = New-Object System.Drawing.Font('Consolas',12)
+$etcher.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$etcher.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$etcher.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$etcher.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$etcher.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$etcher.FlatAppearance.BorderSize = 1
 
 $translucenttb                   = New-Object system.Windows.Forms.Button
 $translucenttb.text              = "Translucent Taskbar"
@@ -474,6 +737,12 @@ $translucenttb.width             = 211
 $translucenttb.height            = 30
 $translucenttb.location          = New-Object System.Drawing.Point(3,236)
 $translucenttb.Font              = New-Object System.Drawing.Font('Consolas',12)
+$translucenttb.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$translucenttb.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$translucenttb.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$translucenttb.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$translucenttb.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$translucenttb.FlatAppearance.BorderSize = 1
 
 $githubdesktop                   = New-Object system.Windows.Forms.Button
 $githubdesktop.text              = "Github Desktop"
@@ -481,6 +750,12 @@ $githubdesktop.width             = 211
 $githubdesktop.height            = 30
 $githubdesktop.location          = New-Object System.Drawing.Point(3,203)
 $githubdesktop.Font              = New-Object System.Drawing.Font('Consolas',12)
+$githubdesktop.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$githubdesktop.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$githubdesktop.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$githubdesktop.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$githubdesktop.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$githubdesktop.FlatAppearance.BorderSize = 1
 
 $discord                         = New-Object system.Windows.Forms.Button
 $discord.text                    = "Discord"
@@ -488,6 +763,12 @@ $discord.width                   = 211
 $discord.height                  = 30
 $discord.location                = New-Object System.Drawing.Point(4,170)
 $discord.Font                    = New-Object System.Drawing.Font('Consolas',12)
+$discord.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$discord.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$discord.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$discord.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$discord.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$discord.FlatAppearance.BorderSize = 1
 
 $autohotkey                      = New-Object system.Windows.Forms.Button
 $autohotkey.text                 = "AutoHotkey"
@@ -495,6 +776,12 @@ $autohotkey.width                = 211
 $autohotkey.height               = 30
 $autohotkey.location             = New-Object System.Drawing.Point(4,136)
 $autohotkey.Font                 = New-Object System.Drawing.Font('Consolas',12)
+$autohotkey.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$autohotkey.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$autohotkey.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$autohotkey.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$autohotkey.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$autohotkey.FlatAppearance.BorderSize = 1
 
 $appearancefx                    = New-Object system.Windows.Forms.Button
 $appearancefx.text               = "Appearance Visual FX"
@@ -502,6 +789,12 @@ $appearancefx.width              = 205
 $appearancefx.height             = 30
 $appearancefx.location           = New-Object System.Drawing.Point(4,385)
 $appearancefx.Font               = New-Object System.Drawing.Font('Consolas',12)
+$appearancefx.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$appearancefx.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$appearancefx.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$appearancefx.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$appearancefx.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$appearancefx.FlatAppearance.BorderSize = 1
 
 $STrayIcons                      = New-Object system.Windows.Forms.Button
 $STrayIcons.text                 = "Show Tray Icons"
@@ -509,6 +802,12 @@ $STrayIcons.width                = 205
 $STrayIcons.height               = 30
 $STrayIcons.location             = New-Object System.Drawing.Point(2,244)
 $STrayIcons.Font                 = New-Object System.Drawing.Font('Consolas',12)
+$STrayIcons.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$STrayIcons.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$STrayIcons.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$STrayIcons.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$STrayIcons.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$STrayIcons.FlatAppearance.BorderSize = 1
 
 $windowsupdatefix                = New-Object system.Windows.Forms.Button
 $windowsupdatefix.text           = "Windows Update Reset"
@@ -516,6 +815,12 @@ $windowsupdatefix.width          = 300
 $windowsupdatefix.height         = 30
 $windowsupdatefix.location       = New-Object System.Drawing.Point(25,216)
 $windowsupdatefix.Font           = New-Object System.Drawing.Font('Consolas',14)
+$windowsupdatefix.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$windowsupdatefix.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$windowsupdatefix.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$windowsupdatefix.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$windowsupdatefix.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$windowsupdatefix.FlatAppearance.BorderSize = 1
 
 $ResultText                      = New-Object system.Windows.Forms.TextBox
 $ResultText.multiline            = $true
@@ -523,6 +828,11 @@ $ResultText.width                = 382
 $ResultText.height               = 130
 $ResultText.location             = New-Object System.Drawing.Point(576,491)
 $ResultText.Font                 = New-Object System.Drawing.Font('Consolas',10)
+$ResultText.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$ResultText.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$ResultText.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$ResultText.BorderColor               = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$ResultText.BorderSize               = 1
 
 $Label10                         = New-Object system.Windows.Forms.Label
 $Label10.text                    = "Current Status:"
@@ -531,6 +841,7 @@ $Label10.width                   = 25
 $Label10.height                  = 10
 $Label10.location                = New-Object System.Drawing.Point(658,448)
 $Label10.Font                    = New-Object System.Drawing.Font('Consolas',24)
+$Label10.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 
 $EHibernation                    = New-Object system.Windows.Forms.Button
 $EHibernation.text               = "Enable Hibernation"
@@ -538,6 +849,12 @@ $EHibernation.width              = 205
 $EHibernation.height             = 30
 $EHibernation.location           = New-Object System.Drawing.Point(3,721)
 $EHibernation.Font               = New-Object System.Drawing.Font('Consolas',12)
+$EHibernation.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$EHibernation.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$EHibernation.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$EHibernation.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$EHibernation.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$EHibernation.FlatAppearance.BorderSize = 1
 
 $dualboottime                    = New-Object system.Windows.Forms.Button
 $dualboottime.text               = "Set Time to UTC (Dual Boot)"
@@ -545,6 +862,12 @@ $dualboottime.width              = 205
 $dualboottime.height             = 30
 $dualboottime.location           = New-Object System.Drawing.Point(3,754)
 $dualboottime.Font               = New-Object System.Drawing.Font('Consolas',12)
+$dualboottime.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$dualboottime.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$dualboottime.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$dualboottime.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$dualboottime.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$dualboottime.FlatAppearance.BorderSize = 1
 
 $Label11                         = New-Object system.Windows.Forms.Label
 $Label11.text                    = "Tron fights for the User"
@@ -553,13 +876,20 @@ $Label11.width                   = 25
 $Label11.height                  = 10
 $Label11.location                = New-Object System.Drawing.Point(652,659)
 $Label11.Font                    = New-Object System.Drawing.Font('Consolas',12)
+$Label11.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 
-$tronfullrun                = New-Object system.Windows.Forms.Button
-$tronfullrun.text           = "Full Run"
-$tronfullrun.width          = 232
-$tronfullrun.height         = 30
-$tronfullrun.location       = New-Object System.Drawing.Point(646,702)
-$tronfullrun.Font           = New-Object System.Drawing.Font('Consolas',10)
+$tronfullrun                     = New-Object system.Windows.Forms.Button
+$tronfullrun.text          		 = "Full Run"
+$tronfullrun.width               = 232
+$tronfullrun.height              = 30
+$tronfullrun.location       	 = New-Object System.Drawing.Point(646,702)
+$tronfullrun.Font           	 = New-Object System.Drawing.Font('Consolas',10)
+$tronfullrun.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$tronfullrun.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$tronfullrun.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$tronfullrun.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$tronfullrun.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$tronfullrun.FlatAppearance.BorderSize = 1
 
 $tronmalwarerun                  = New-Object system.Windows.Forms.Button
 $tronmalwarerun.text             = "Remove Malware"
@@ -567,13 +897,25 @@ $tronmalwarerun.width            = 232
 $tronmalwarerun.height           = 30
 $tronmalwarerun.location         = New-Object System.Drawing.Point(646,745)
 $tronmalwarerun.Font             = New-Object System.Drawing.Font('Consolas',10)
+$tronmalwarerun.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$tronmalwarerun.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$tronmalwarerun.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$tronmalwarerun.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$tronmalwarerun.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$tronmalwarerun.FlatAppearance.BorderSize = 1
 
-$tronsystemcleanuprun                    = New-Object system.Windows.Forms.Button
-$tronsystemcleanuprun.text               = "Clean Up System"
-$tronsystemcleanuprun.width              = 232
-$tronsystemcleanuprun.height             = 30
-$tronsystemcleanuprun.location           = New-Object System.Drawing.Point(646,790)
-$tronsystemcleanuprun.Font               = New-Object System.Drawing.Font('Consolas',10)
+$tronsystemcleanuprun            = New-Object system.Windows.Forms.Button
+$tronsystemcleanuprun.text       = "Clean Up System"
+$tronsystemcleanuprun.width      = 232
+$tronsystemcleanuprun.height     = 30
+$tronsystemcleanuprun.location   = New-Object System.Drawing.Point(646,790)
+$tronsystemcleanuprun.Font       = New-Object System.Drawing.Font('Consolas',10)
+$tronsystemcleanuprun.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$tronsystemcleanuprun.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$tronsystemcleanuprun.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
+$tronsystemcleanuprun.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
+$tronsystemcleanuprun.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$tronsystemcleanuprun.FlatAppearance.BorderSize = 1
 
 $ncpa                            = New-Object system.Windows.Forms.Button
 $ncpa.text                       = "Network Connections"
@@ -581,6 +923,12 @@ $ncpa.width                      = 211
 $ncpa.height                     = 30
 $ncpa.location                   = New-Object System.Drawing.Point(4,126)
 $ncpa.Font                       = New-Object System.Drawing.Font('Consolas',12)
+$ncpa.BackColor                   = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$ncpa.ForeColor                   = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$ncpa.BorderStyle                 = [System.Windows.Forms.BorderStyle]::FixedSingle
+$ncpa.FlatStyle                   = [System.Windows.Forms.FlatStyle]::Flat
+$ncpa.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$ncpa.FlatAppearance.BorderSize = 1
 
 $oldcontrolpanel                 = New-Object system.Windows.Forms.Button
 $oldcontrolpanel.text            = "Win7 Control Panel"
@@ -588,6 +936,12 @@ $oldcontrolpanel.width           = 211
 $oldcontrolpanel.height          = 30
 $oldcontrolpanel.location        = New-Object System.Drawing.Point(4,193)
 $oldcontrolpanel.Font            = New-Object System.Drawing.Font('Consolas',12)
+$oldcontrolpanel.BackColor        = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$oldcontrolpanel.ForeColor        = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$oldcontrolpanel.BorderStyle      = [System.Windows.Forms.BorderStyle]::FixedSingle
+$oldcontrolpanel.FlatStyle        = [System.Windows.Forms.FlatStyle]::Flat
+$oldcontrolpanel.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$oldcontrolpanel.FlatAppearance.BorderSize = 1
 
 $oldsoundpanel                   = New-Object system.Windows.Forms.Button
 $oldsoundpanel.text              = "Win7 Sound Panel"
@@ -595,6 +949,12 @@ $oldsoundpanel.width             = 211
 $oldsoundpanel.height            = 30
 $oldsoundpanel.location          = New-Object System.Drawing.Point(5,262)
 $oldsoundpanel.Font              = New-Object System.Drawing.Font('Consolas',12)
+$oldsoundpanel.BackColor          = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$oldsoundpanel.ForeColor          = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$oldsoundpanel.BorderStyle       = [System.Windows.Forms.BorderStyle]::FixedSingle
+$oldsoundpanel.FlatStyle         = [System.Windows.Forms.FlatStyle]::Flat
+$oldsoundpanel.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$oldsoundpanel.FlatAppearance.BorderSize = 1
 
 $oldsystempanel                  = New-Object system.Windows.Forms.Button
 $oldsystempanel.text             = "Win7 System Panel"
@@ -602,6 +962,12 @@ $oldsystempanel.width            = 211
 $oldsystempanel.height           = 30
 $oldsystempanel.location         = New-Object System.Drawing.Point(5,298)
 $oldsystempanel.Font             = New-Object System.Drawing.Font('Consolas',12)
+$oldsystempanel.BackColor         = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$oldsystempanel.ForeColor         = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$oldsystempanel.BorderStyle      = [System.Windows.Forms.BorderStyle]::FixedSingle
+$oldsystempanel.FlatStyle        = [System.Windows.Forms.FlatStyle]::Flat
+$oldsystempanel.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$oldsystempanel.FlatAppearance.BorderSize = 1
 
 $NFS                             = New-Object system.Windows.Forms.Button
 $NFS.text                        = "Enable NFS"
@@ -609,6 +975,12 @@ $NFS.width                       = 211
 $NFS.height                      = 30
 $NFS.location                    = New-Object System.Drawing.Point(4,57)
 $NFS.Font                        = New-Object System.Drawing.Font('Consolas',12)
+$NFS.BackColor                   = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$NFS.ForeColor                   = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$NFS.BorderStyle                 = [System.Windows.Forms.BorderStyle]::FixedSingle
+$NFS.FlatStyle                   = [System.Windows.Forms.FlatStyle]::Flat
+$NFS.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$NFS.FlatAppearance.BorderSize = 1
 
 $laptopnumlock                   = New-Object system.Windows.Forms.Button
 $laptopnumlock.text              = "Laptop Numlock Fix"
@@ -616,6 +988,12 @@ $laptopnumlock.width             = 211
 $laptopnumlock.height            = 30
 $laptopnumlock.location          = New-Object System.Drawing.Point(4,92)
 $laptopnumlock.Font              = New-Object System.Drawing.Font('Consolas',12)
+$laptopnumlock.BackColor         = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$laptopnumlock.ForeColor         = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$laptopnumlock.BorderStyle       = [System.Windows.Forms.BorderStyle]::FixedSingle
+$laptopnumlock.FlatStyle         = [System.Windows.Forms.FlatStyle]::Flat
+$laptopnumlock.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$laptopnumlock.FlatAppearance.BorderSize = 1
 
 $disableupdates                  = New-Object system.Windows.Forms.Button
 $disableupdates.text             = "Disable Update Services"
@@ -623,6 +1001,12 @@ $disableupdates.width            = 300
 $disableupdates.height           = 30
 $disableupdates.location         = New-Object System.Drawing.Point(23,292)
 $disableupdates.Font             = New-Object System.Drawing.Font('Consolas',14)
+$disableupdates.BackColor        = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$disableupdates.ForeColor        = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$disableupdates.BorderStyle      = [System.Windows.Forms.BorderStyle]::FixedSingle
+$disableupdates.FlatStyle        = [System.Windows.Forms.FlatStyle]::Flat
+$disableupdates.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$disableupdates.FlatAppearance.BorderSize = 1
 
 $enableupdates                   = New-Object system.Windows.Forms.Button
 $enableupdates.text              = "Enable Update Services"
@@ -630,6 +1014,12 @@ $enableupdates.width             = 300
 $enableupdates.height            = 30
 $enableupdates.location          = New-Object System.Drawing.Point(25,179)
 $enableupdates.Font              = New-Object System.Drawing.Font('Consolas',14)
+$enableupdates.BackColor         = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$enableupdates.ForeColor         = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$enableupdates.BorderStyle       = [System.Windows.Forms.BorderStyle]::FixedSingle
+$enableupdates.FlatStyle         = [System.Windows.Forms.FlatStyle]::Flat
+$enableupdates.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$enableupdates.FlatAppearance.BorderSize = 1
 
 $Label12                         = New-Object system.Windows.Forms.Label
 $Label12.text                    = "NOT RECOMMENDED!!!"
@@ -638,6 +1028,7 @@ $Label12.width                   = 25
 $Label12.height                  = 10
 $Label12.location                = New-Object System.Drawing.Point(98,275)
 $Label12.Font                    = New-Object System.Drawing.Font('Consolas',10,[System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
+$Label12.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 
 $Virtualization                  = New-Object system.Windows.Forms.Button
 $Virtualization.text             = "Enable HyperV + WSL"
@@ -645,6 +1036,12 @@ $Virtualization.width            = 211
 $Virtualization.height           = 30
 $Virtualization.location         = New-Object System.Drawing.Point(4,23)
 $Virtualization.Font             = New-Object System.Drawing.Font('Consolas',12)
+$Virtualization.BackColor        = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$Virtualization.ForeColor        = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$Virtualization.BorderStyle      = [System.Windows.Forms.BorderStyle]::FixedSingle
+$Virtualization.FlatStyle        = [System.Windows.Forms.FlatStyle]::Flat
+$Virtualization.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$Virtualization.FlatAppearance.BorderSize = 1
 
 $oldpower                        = New-Object system.Windows.Forms.Button
 $oldpower.text                   = "Win7 Power Panel"
@@ -652,6 +1049,12 @@ $oldpower.width                  = 211
 $oldpower.height                 = 30
 $oldpower.location               = New-Object System.Drawing.Point(4,227)
 $oldpower.Font                   = New-Object System.Drawing.Font('Consolas',12)
+$oldpower.BackColor              = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$oldpower.ForeColor              = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$oldpower.BorderStyle            = [System.Windows.Forms.BorderStyle]::FixedSingle
+$oldpower.FlatStyle              = [System.Windows.Forms.FlatStyle]::Flat
+$oldpower.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$oldpower.FlatAppearance.BorderSize = 1
 
 $restorepower                    = New-Object system.Windows.Forms.Button
 $restorepower.text               = "Restore Power Options"
@@ -659,6 +1062,12 @@ $restorepower.width              = 211
 $restorepower.height             = 30
 $restorepower.location           = New-Object System.Drawing.Point(4,159)
 $restorepower.Font               = New-Object System.Drawing.Font('Consolas',12)
+$restorepower.BackColor          = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$restorepower.ForeColor          = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$restorepower.BorderStyle        = [System.Windows.Forms.BorderStyle]::FixedSingle
+$restorepower.FlatStyle          = [System.Windows.Forms.FlatStyle]::Flat
+$restorepower.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$restorepower.FlatAppearance.BorderSize = 1
 
 $Form.controls.AddRange(@($Panel1,$Panel2,$Label3,$Label15,$Panel4,$PictureBox1,$Label1,$Panel3,$ResultText,$Label10,$Label11,$tronfullrun,$tronmalwarerun,$tronsystemcleanuprun))
 $Panel1.controls.AddRange(@($brave,$firefox,$7zip,$sharex,$adobereader,$notepad,$gchrome,$mpc,$vlc,$powertoys,$winterminal,$vscode,$Label2,$everythingsearch,$sumatrapdf,$vscodium,$imageglass,$gimp,$Label7,$Label8,$Label9,$advancedipscanner,$putty,$etcher,$translucenttb,$githubdesktop,$discord,$autohotkey))
@@ -771,13 +1180,13 @@ $vscodium.Add_Click({
 $tronfullrun.Add_Click({
 	Write-Host "Deleting old Tron"
 
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\integrity_verification"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\resources"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\tron"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\changelog-v12.0.2-updated-2022-01-18.txt"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\Instructions -- YES ACTUALLY READ THEM.txt"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\tron.bat"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\Tron.exe"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\integrity_verification"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\resources"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\tron"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\changelog-v12.0.2-updated-2022-01-18.txt"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\Instructions -- YES ACTUALLY READ THEM.txt"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\tron.bat"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\Tron.exe"
 
 	Write-Host "Downloading Tron"
 
@@ -787,14 +1196,14 @@ $tronfullrun.Add_Click({
 	cd -v "~\Desktop\"
 	.\Tron.exe
 	mv -v "~\Desktop\tron\*" "~\Desktop\"
-	#cmd.exe /c "C:\Users\Tyler\Desktop\tron.bat"
-	Start-Process -FilePath "C:\Users\Tyler\Desktop\tron.bat" -ArgumentList "-e -v -x" -NoNewWindow
+	#cmd.exe /c "~\Desktop\tron.bat"
+	Start-Process -FilePath "~\Desktop\tron.bat" -ArgumentList "-e -v -x" -NoNewWindow
 
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\integrity_verification"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\tron"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\changelog-v12.0.2-updated-2022-01-18.txt"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\Instructions -- YES ACTUALLY READ THEM.txt"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\Tron.exe"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\integrity_verification"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\tron"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\changelog-v12.0.2-updated-2022-01-18.txt"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\Instructions -- YES ACTUALLY READ THEM.txt"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\Tron.exe"
 
 
 })
@@ -802,13 +1211,13 @@ $tronfullrun.Add_Click({
 $tronmalwarerun.Add_Click({
 	Write-Host "Deleting old Tron"
 
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\integrity_verification"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\resources"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\tron"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\changelog-v12.0.2-updated-2022-01-18.txt"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\Instructions -- YES ACTUALLY READ THEM.txt"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\tron.bat"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\Tron.exe"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\integrity_verification"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\resources"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\tron"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\changelog-v12.0.2-updated-2022-01-18.txt"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\Instructions -- YES ACTUALLY READ THEM.txt"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\tron.bat"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\Tron.exe"
 
 	Write-Host "Downloading Tron"
 
@@ -818,26 +1227,26 @@ $tronmalwarerun.Add_Click({
 	cd -v "~\Desktop\"
 	.\Tron.exe
 	mv -v "~\Desktop\tron\*" "~\Desktop\"
-	#cmd.exe /c "C:\Users\Tyler\Desktop\tron.bat"
-	Start-Process -FilePath "C:\Users\Tyler\Desktop\tron.bat" -ArgumentList "-e -sap -sd -sdc -sor -str -swu -v -x" -NoNewWindow
+	#cmd.exe /c "~\Desktop\tron.bat"
+	Start-Process -FilePath "~\Desktop\tron.bat" -ArgumentList "-e -sap -sd -sdc -sor -str -swu -v -x" -NoNewWindow
 
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\integrity_verification"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\tron"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\changelog-v12.0.2-updated-2022-01-18.txt"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\Instructions -- YES ACTUALLY READ THEM.txt"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\Tron.exe"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\integrity_verification"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\tron"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\changelog-v12.0.2-updated-2022-01-18.txt"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\Instructions -- YES ACTUALLY READ THEM.txt"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\Tron.exe"
 })
 
 $tronsystemcleanuprun.Add_Click({
 	Write-Host "Deleting old Tron"
 
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\integrity_verification"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\resources"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\tron"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\changelog-v12.0.2-updated-2022-01-18.txt"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\Instructions -- YES ACTUALLY READ THEM.txt"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\tron.bat"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\Tron.exe"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\integrity_verification"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\resources"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\tron"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\changelog-v12.0.2-updated-2022-01-18.txt"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\Instructions -- YES ACTUALLY READ THEM.txt"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\tron.bat"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\Tron.exe"
 
 	Write-Host "Downloading Tron"
 
@@ -847,14 +1256,14 @@ $tronsystemcleanuprun.Add_Click({
 	cd -v "~\Desktop\"
 	.\Tron.exe
 	mv -v "~\Desktop\tron\*" "~\Desktop\"
-	#cmd.exe /c "C:\Users\Tyler\Desktop\tron.bat"
-	Start-Process -FilePath "C:\Users\Tyler\Desktop\tron.bat" -ArgumentList "-e -sa -sdu -v -x" -NoNewWindow
+	#cmd.exe /c "~\Desktop\tron.bat"
+	Start-Process -FilePath "~\Desktop\tron.bat" -ArgumentList "-e -sa -sdu -v -x" -NoNewWindow
 
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\integrity_verification"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\tron"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\changelog-v12.0.2-updated-2022-01-18.txt"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\Instructions -- YES ACTUALLY READ THEM.txt"
-	Remove-Item -Verbose -Force -Recurse "C:\Users\Tyler\Desktop\Tron.exe"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\integrity_verification"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\tron"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\changelog-v12.0.2-updated-2022-01-18.txt"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\Instructions -- YES ACTUALLY READ THEM.txt"
+	Remove-Item -Verbose -Force -Recurse "~\Desktop\Tron.exe"
 })
 
 $winterminal.Add_Click({
