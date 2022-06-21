@@ -1,0 +1,1 @@
+Powershell.exe -Command "& {Start-Process Powershell.exe -ArgumentList '-ExecutionPolicy Bypass -Command iwr -useb https://cdn.githubraw.com/dragonlord026/win10script/master/win10debloat.ps1 | iex' -Verb RunAs}"
