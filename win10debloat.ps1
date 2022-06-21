@@ -30,7 +30,7 @@ else{
 
 $Form                            = New-Object system.Windows.Forms.Form
 $Form.ClientSize                 = New-Object System.Drawing.Point(1050,1000)
-$Form.text                       = "Windows Toolbox By Tyler Gadd"
+$Form.text                       = "Windows Toolbox By Xylter"
 $Form.StartPosition              = "CenterScreen"
 $Form.TopMost                    = $false
 $Form.BackColor                  = [System.Drawing.ColorTranslator]::FromHtml("#282a36")
@@ -66,7 +66,7 @@ $brave.BackColor                 = [System.Drawing.ColorTranslator]::FromHtml("#
 $brave.ForeColor                 = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $brave.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $brave.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$brave.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$brave.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $brave.FlatAppearance.BorderSize  = 1
 
 
@@ -80,7 +80,7 @@ $firefox.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#
 $firefox.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $firefox.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $firefox.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$firefox.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$firefox.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $firefox.FlatAppearance.BorderSize = 1
 
 
@@ -94,7 +94,7 @@ $7zip.BackColor                  = [System.Drawing.ColorTranslator]::FromHtml("#
 $7zip.ForeColor                  = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $7zip.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $7zip.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$7zip.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$7zip.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $7zip.FlatAppearance.BorderSize = 1
 
 $sharex                          = New-Object system.Windows.Forms.Button
@@ -107,7 +107,7 @@ $sharex.BackColor                = [System.Drawing.ColorTranslator]::FromHtml("#
 $sharex.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $sharex.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $sharex.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$sharex.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$sharex.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $sharex.FlatAppearance.BorderSize = 1
 
 $adobereader                     = New-Object system.Windows.Forms.Button
@@ -120,7 +120,7 @@ $adobereader.BackColor           = [System.Drawing.ColorTranslator]::FromHtml("#
 $adobereader.ForeColor           = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $adobereader.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $adobereader.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$adobereader.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$adobereader.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $adobereader.FlatAppearance.BorderSize = 1
 
 $notepad                         = New-Object system.Windows.Forms.Button
@@ -133,7 +133,7 @@ $notepad.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#
 $notepad.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $notepad.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $notepad.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$notepad.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$notepad.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $notepad.FlatAppearance.BorderSize = 1
 
 $gchrome                         = New-Object system.Windows.Forms.Button
@@ -146,7 +146,7 @@ $gchrome.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#
 $gchrome.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $gchrome.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $gchrome.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$gchrome.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$gchrome.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $gchrome.FlatAppearance.BorderSize = 1
 
 $mpc                             = New-Object system.Windows.Forms.Button
@@ -159,7 +159,7 @@ $mpc.BackColor                   = [System.Drawing.ColorTranslator]::FromHtml("#
 $mpc.ForeColor                   = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $mpc.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $mpc.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$mpc.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$mpc.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $mpc.FlatAppearance.BorderSize = 1
 
 $vlc                             = New-Object system.Windows.Forms.Button
@@ -172,7 +172,7 @@ $vlc.BackColor                   = [System.Drawing.ColorTranslator]::FromHtml("#
 $vlc.ForeColor                   = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $vlc.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $vlc.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$vlc.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$vlc.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $vlc.FlatAppearance.BorderSize = 1
 
 $powertoys                       = New-Object system.Windows.Forms.Button
@@ -185,7 +185,7 @@ $powertoys.BackColor             = [System.Drawing.ColorTranslator]::FromHtml("#
 $powertoys.ForeColor             = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $powertoys.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $powertoys.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$powertoys.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$powertoys.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $powertoys.FlatAppearance.BorderSize = 1
 
 $winterminal                     = New-Object system.Windows.Forms.Button
@@ -198,7 +198,7 @@ $winterminal.BackColor           = [System.Drawing.ColorTranslator]::FromHtml("#
 $winterminal.ForeColor           = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $winterminal.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $winterminal.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$winterminal.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$winterminal.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $winterminal.FlatAppearance.BorderSize = 1
 
 $vscode                          = New-Object system.Windows.Forms.Button
@@ -211,7 +211,7 @@ $vscode.BackColor                = [System.Drawing.ColorTranslator]::FromHtml("#
 $vscode.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $vscode.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $vscode.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$vscode.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$vscode.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $vscode.FlatAppearance.BorderSize = 1
 
 $Label2                          = New-Object system.Windows.Forms.Label
@@ -235,20 +235,20 @@ $Label3.AutoSize                 = $true
 $Label3.width                    = 230
 $Label3.height                   = 25
 $Label3.location                 = New-Object System.Drawing.Point(349,11)
-$Label3.Font                     = New-Object System.Drawing.Font('Consolas',24)
+$Label3.Font                     = New-Object System.Drawing.Font('Consolas',24,[System.Drawing.FontStyle]::Underline)
 $Label3.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 
 $essentialtweaks                 = New-Object system.Windows.Forms.Button
 $essentialtweaks.text            = "Essential Tweaks"
 $essentialtweaks.width           = 205
-$essentialtweaks.height          = 75
-$essentialtweaks.location        = New-Object System.Drawing.Point(0,17)
+$essentialtweaks.height          = 80
+$essentialtweaks.location        = New-Object System.Drawing.Point(3,17)
 $essentialtweaks.Font            = New-Object System.Drawing.Font('Consolas',14)
 $essentialtweaks.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
 $essentialtweaks.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $essentialtweaks.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $essentialtweaks.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$essentialtweaks.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$essentialtweaks.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $essentialtweaks.FlatAppearance.BorderSize = 1
 
 $backgroundapps                  = New-Object system.Windows.Forms.Button
@@ -261,7 +261,7 @@ $backgroundapps.BackColor               = [System.Drawing.ColorTranslator]::From
 $backgroundapps.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $backgroundapps.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $backgroundapps.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$backgroundapps.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$backgroundapps.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $backgroundapps.FlatAppearance.BorderSize = 1
 
 $cortana                         = New-Object system.Windows.Forms.Button
@@ -274,7 +274,7 @@ $cortana.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#
 $cortana.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $cortana.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $cortana.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$cortana.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$cortana.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $cortana.FlatAppearance.BorderSize = 1
 
 $actioncenter                    = New-Object system.Windows.Forms.Button
@@ -287,7 +287,7 @@ $actioncenter.BackColor               = [System.Drawing.ColorTranslator]::FromHt
 $actioncenter.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $actioncenter.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $actioncenter.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$actioncenter.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$actioncenter.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $actioncenter.FlatAppearance.BorderSize = 1
 
 $darkmode                        = New-Object system.Windows.Forms.Button
@@ -300,7 +300,7 @@ $darkmode.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("
 $darkmode.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $darkmode.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $darkmode.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$darkmode.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$darkmode.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $darkmode.FlatAppearance.BorderSize = 1
 
 $performancefx                   = New-Object system.Windows.Forms.Button
@@ -313,7 +313,7 @@ $performancefx.BackColor               = [System.Drawing.ColorTranslator]::FromH
 $performancefx.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $performancefx.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $performancefx.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$performancefx.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$performancefx.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $performancefx.FlatAppearance.BorderSize = 1
 
 $onedrive                        = New-Object system.Windows.Forms.Button
@@ -326,7 +326,7 @@ $onedrive.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("
 $onedrive.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $onedrive.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $onedrive.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$onedrive.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$onedrive.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $onedrive.FlatAppearance.BorderSize = 1
 
 $Label15                         = New-Object system.Windows.Forms.Label
@@ -335,7 +335,7 @@ $Label15.AutoSize                = $true
 $Label15.width                   = 25
 $Label15.height                  = 10
 $Label15.location                = New-Object System.Drawing.Point(732,11)
-$Label15.Font                    = New-Object System.Drawing.Font('Consolas',24)
+$Label15.Font                    = New-Object System.Drawing.Font('Consolas',24,[System.Drawing.FontStyle]::Underline)
 $Label15.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 
 $Panel4                          = New-Object system.Windows.Forms.Panel
@@ -353,7 +353,7 @@ $defaultwindowsupdate.BackColor   = [System.Drawing.ColorTranslator]::FromHtml("
 $defaultwindowsupdate.ForeColor   = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $defaultwindowsupdate.BorderStyle = [System.Windows.Forms.BorderStyle]::FixedSingle
 $defaultwindowsupdate.FlatStyle   = [System.Windows.Forms.FlatStyle]::Flat
-$defaultwindowsupdate.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$defaultwindowsupdate.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $defaultwindowsupdate.FlatAppearance.BorderSize = 1
 
 $securitywindowsupdate           = New-Object system.Windows.Forms.Button
@@ -366,7 +366,7 @@ $securitywindowsupdate.BackColor               = [System.Drawing.ColorTranslator
 $securitywindowsupdate.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $securitywindowsupdate.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $securitywindowsupdate.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$securitywindowsupdate.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$securitywindowsupdate.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $securitywindowsupdate.FlatAppearance.BorderSize = 1
 
 $Label16                         = New-Object system.Windows.Forms.Label
@@ -422,7 +422,7 @@ $lightmode.BackColor              = [System.Drawing.ColorTranslator]::FromHtml("
 $lightmode.ForeColor              = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $lightmode.BorderStyle              = [System.Windows.Forms.BorderStyle]::FixedSingle
 $lightmode.FlatStyle                = [System.Windows.Forms.FlatStyle]::Flat
-$lightmode.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$lightmode.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $lightmode.FlatAppearance.BorderSize = 1
 
 $Label1                          = New-Object system.Windows.Forms.Label
@@ -431,7 +431,8 @@ $Label1.AutoSize                 = $true
 $Label1.width                    = 230
 $Label1.height                   = 25
 $Label1.location                 = New-Object System.Drawing.Point(76,11)
-$Label1.Font                     = New-Object System.Drawing.Font('Consolas',24)
+$Label1.Font                     = New-Object System.Drawing.Font('Consolas',24,[System.Drawing.FontStyle]::Underline)
+$Label1.UnderlineColor           = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $Label1.ForeColor                = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 
 $Panel3                          = New-Object system.Windows.Forms.Panel
@@ -449,7 +450,7 @@ $essentialundo.BackColor               = [System.Drawing.ColorTranslator]::FromH
 $essentialundo.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $essentialundo.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $essentialundo.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$essentialundo.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$essentialundo.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $essentialundo.FlatAppearance.BorderSize = 1
 
 $EActionCenter                   = New-Object system.Windows.Forms.Button
@@ -462,7 +463,7 @@ $EActionCenter.BackColor               = [System.Drawing.ColorTranslator]::FromH
 $EActionCenter.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $EActionCenter.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $EActionCenter.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$EActionCenter.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$EActionCenter.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $EActionCenter.FlatAppearance.BorderSize = 1
 
 $ECortana                        = New-Object system.Windows.Forms.Button
@@ -475,7 +476,7 @@ $ECortana.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("
 $ECortana.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $ECortana.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $ECortana.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$ECortana.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$ECortana.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $ECortana.FlatAppearance.BorderSize = 1
 
 $RBackgroundApps                 = New-Object system.Windows.Forms.Button
@@ -488,7 +489,7 @@ $RBackgroundApps.BackColor               = [System.Drawing.ColorTranslator]::Fro
 $RBackgroundApps.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $RBackgroundApps.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $RBackgroundApps.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$RBackgroundApps.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$RBackgroundApps.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $RBackgroundApps.FlatAppearance.BorderSize = 1
 
 $HTrayIcons                      = New-Object system.Windows.Forms.Button
@@ -501,7 +502,7 @@ $HTrayIcons.BackColor               = [System.Drawing.ColorTranslator]::FromHtml
 $HTrayIcons.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $HTrayIcons.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $HTrayIcons.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$HTrayIcons.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$HTrayIcons.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $HTrayIcons.FlatAppearance.BorderSize = 1
 
 $EClipboardHistory               = New-Object system.Windows.Forms.Button
@@ -514,7 +515,7 @@ $EClipboardHistory.BackColor               = [System.Drawing.ColorTranslator]::F
 $EClipboardHistory.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $EClipboardHistory.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $EClipboardHistory.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$EClipboardHistory.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$EClipboardHistory.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $EClipboardHistory.FlatAppearance.BorderSize = 1
 
 $ELocation                       = New-Object system.Windows.Forms.Button
@@ -527,7 +528,7 @@ $ELocation.BackColor               = [System.Drawing.ColorTranslator]::FromHtml(
 $ELocation.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $ELocation.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $ELocation.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$ELocation.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$ELocation.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $ELocation.FlatAppearance.BorderSize = 1
 
 $InstallOneDrive                 = New-Object system.Windows.Forms.Button
@@ -540,7 +541,7 @@ $InstallOneDrive.BackColor               = [System.Drawing.ColorTranslator]::Fro
 $InstallOneDrive.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $InstallOneDrive.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $InstallOneDrive.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$InstallOneDrive.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$InstallOneDrive.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $InstallOneDrive.FlatAppearance.BorderSize = 1
 
 $everythingsearch                = New-Object system.Windows.Forms.Button
@@ -553,7 +554,7 @@ $everythingsearch.BackColor               = [System.Drawing.ColorTranslator]::Fr
 $everythingsearch.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $everythingsearch.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $everythingsearch.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$everythingsearch.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$everythingsearch.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $everythingsearch.FlatAppearance.BorderSize = 1
 
 $sumatrapdf                      = New-Object system.Windows.Forms.Button
@@ -566,7 +567,7 @@ $sumatrapdf.BackColor               = [System.Drawing.ColorTranslator]::FromHtml
 $sumatrapdf.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $sumatrapdf.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $sumatrapdf.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$sumatrapdf.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$sumatrapdf.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $sumatrapdf.FlatAppearance.BorderSize = 1
 
 $vscodium                        = New-Object system.Windows.Forms.Button
@@ -579,7 +580,7 @@ $vscodium.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("
 $vscodium.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $vscodium.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $vscodium.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$vscodium.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$vscodium.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $vscodium.FlatAppearance.BorderSize = 1
 
 $imageglass                      = New-Object system.Windows.Forms.Button
@@ -592,7 +593,7 @@ $imageglass.BackColor               = [System.Drawing.ColorTranslator]::FromHtml
 $imageglass.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $imageglass.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $imageglass.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$imageglass.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$imageglass.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $imageglass.FlatAppearance.BorderSize = 1
 
 $gimp                            = New-Object system.Windows.Forms.Button
@@ -605,7 +606,7 @@ $gimp.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#444
 $gimp.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $gimp.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $gimp.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$gimp.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$gimp.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $gimp.FlatAppearance.BorderSize = 1
 
 $yourphonefix                    = New-Object system.Windows.Forms.Button
@@ -618,7 +619,7 @@ $yourphonefix.BackColor               = [System.Drawing.ColorTranslator]::FromHt
 $yourphonefix.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $yourphonefix.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $yourphonefix.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$yourphonefix.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$yourphonefix.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $yourphonefix.FlatAppearance.BorderSize = 1
 
 $removebloat                     = New-Object system.Windows.Forms.Button
@@ -631,7 +632,7 @@ $removebloat.BackColor               = [System.Drawing.ColorTranslator]::FromHtm
 $removebloat.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $removebloat.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $removebloat.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$removebloat.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$removebloat.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $removebloat.FlatAppearance.BorderSize = 1
 
 $reinstallbloat                  = New-Object system.Windows.Forms.Button
@@ -644,7 +645,7 @@ $reinstallbloat.BackColor               = [System.Drawing.ColorTranslator]::From
 $reinstallbloat.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $reinstallbloat.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $reinstallbloat.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$reinstallbloat.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$reinstallbloat.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $reinstallbloat.FlatAppearance.BorderSize = 1
 
 $WarningLabel                    = New-Object system.Windows.Forms.Label
@@ -702,7 +703,7 @@ $advancedipscanner.BackColor               = [System.Drawing.ColorTranslator]::F
 $advancedipscanner.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $advancedipscanner.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $advancedipscanner.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$advancedipscanner.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$advancedipscanner.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $advancedipscanner.FlatAppearance.BorderSize = 1
 
 $putty                           = New-Object system.Windows.Forms.Button
@@ -715,7 +716,7 @@ $putty.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44
 $putty.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $putty.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $putty.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$putty.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$putty.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $putty.FlatAppearance.BorderSize = 1
 
 $etcher                          = New-Object system.Windows.Forms.Button
@@ -728,7 +729,7 @@ $etcher.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#4
 $etcher.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $etcher.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $etcher.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$etcher.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$etcher.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $etcher.FlatAppearance.BorderSize = 1
 
 $translucenttb                   = New-Object system.Windows.Forms.Button
@@ -741,7 +742,7 @@ $translucenttb.BackColor               = [System.Drawing.ColorTranslator]::FromH
 $translucenttb.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $translucenttb.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $translucenttb.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$translucenttb.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$translucenttb.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $translucenttb.FlatAppearance.BorderSize = 1
 
 $githubdesktop                   = New-Object system.Windows.Forms.Button
@@ -754,7 +755,7 @@ $githubdesktop.BackColor               = [System.Drawing.ColorTranslator]::FromH
 $githubdesktop.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $githubdesktop.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $githubdesktop.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$githubdesktop.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$githubdesktop.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $githubdesktop.FlatAppearance.BorderSize = 1
 
 $discord                         = New-Object system.Windows.Forms.Button
@@ -767,7 +768,7 @@ $discord.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#
 $discord.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $discord.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $discord.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$discord.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$discord.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $discord.FlatAppearance.BorderSize = 1
 
 $autohotkey                      = New-Object system.Windows.Forms.Button
@@ -780,7 +781,7 @@ $autohotkey.BackColor               = [System.Drawing.ColorTranslator]::FromHtml
 $autohotkey.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $autohotkey.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $autohotkey.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$autohotkey.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$autohotkey.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $autohotkey.FlatAppearance.BorderSize = 1
 
 $appearancefx                    = New-Object system.Windows.Forms.Button
@@ -793,7 +794,7 @@ $appearancefx.BackColor               = [System.Drawing.ColorTranslator]::FromHt
 $appearancefx.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $appearancefx.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $appearancefx.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$appearancefx.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$appearancefx.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $appearancefx.FlatAppearance.BorderSize = 1
 
 $STrayIcons                      = New-Object system.Windows.Forms.Button
@@ -806,7 +807,7 @@ $STrayIcons.BackColor               = [System.Drawing.ColorTranslator]::FromHtml
 $STrayIcons.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $STrayIcons.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $STrayIcons.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$STrayIcons.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$STrayIcons.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $STrayIcons.FlatAppearance.BorderSize = 1
 
 $windowsupdatefix                = New-Object system.Windows.Forms.Button
@@ -819,7 +820,7 @@ $windowsupdatefix.BackColor               = [System.Drawing.ColorTranslator]::Fr
 $windowsupdatefix.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $windowsupdatefix.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $windowsupdatefix.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$windowsupdatefix.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$windowsupdatefix.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $windowsupdatefix.FlatAppearance.BorderSize = 1
 
 $ResultText                      = New-Object system.Windows.Forms.TextBox
@@ -831,7 +832,7 @@ $ResultText.Font                 = New-Object System.Drawing.Font('Consolas',10)
 $ResultText.BackColor               = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
 $ResultText.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $ResultText.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
-$ResultText.BorderColor               = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$ResultText.BorderColor               = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $ResultText.BorderSize               = 1
 
 $Label10                         = New-Object system.Windows.Forms.Label
@@ -839,8 +840,8 @@ $Label10.text                    = "Current Status:"
 $Label10.AutoSize                = $true
 $Label10.width                   = 25
 $Label10.height                  = 10
-$Label10.location                = New-Object System.Drawing.Point(658,448)
-$Label10.Font                    = New-Object System.Drawing.Font('Consolas',24)
+$Label10.location                = New-Object System.Drawing.Point(628,448)
+$Label10.Font                    = New-Object System.Drawing.Font('Consolas',24,[System.Drawing.FontStyle]::Underline)
 $Label10.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 
 $EHibernation                    = New-Object system.Windows.Forms.Button
@@ -853,7 +854,7 @@ $EHibernation.BackColor               = [System.Drawing.ColorTranslator]::FromHt
 $EHibernation.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $EHibernation.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $EHibernation.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$EHibernation.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$EHibernation.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $EHibernation.FlatAppearance.BorderSize = 1
 
 $dualboottime                    = New-Object system.Windows.Forms.Button
@@ -866,7 +867,7 @@ $dualboottime.BackColor               = [System.Drawing.ColorTranslator]::FromHt
 $dualboottime.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $dualboottime.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $dualboottime.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$dualboottime.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$dualboottime.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $dualboottime.FlatAppearance.BorderSize = 1
 
 $Label11                         = New-Object system.Windows.Forms.Label
@@ -874,8 +875,8 @@ $Label11.text                    = "Tron fights for the User"
 $Label11.AutoSize                = $true
 $Label11.width                   = 25
 $Label11.height                  = 10
-$Label11.location                = New-Object System.Drawing.Point(652,659)
-$Label11.Font                    = New-Object System.Drawing.Font('Consolas',12)
+$Label11.location                = New-Object System.Drawing.Point(612,660)
+$Label11.Font                    = New-Object System.Drawing.Font('Consolas',16,[System.Drawing.FontStyle]::Underline)
 $Label11.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 
 $tronfullrun                     = New-Object system.Windows.Forms.Button
@@ -888,7 +889,7 @@ $tronfullrun.BackColor               = [System.Drawing.ColorTranslator]::FromHtm
 $tronfullrun.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $tronfullrun.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $tronfullrun.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$tronfullrun.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$tronfullrun.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $tronfullrun.FlatAppearance.BorderSize = 1
 
 $tronmalwarerun                  = New-Object system.Windows.Forms.Button
@@ -901,7 +902,7 @@ $tronmalwarerun.BackColor               = [System.Drawing.ColorTranslator]::From
 $tronmalwarerun.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $tronmalwarerun.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $tronmalwarerun.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$tronmalwarerun.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$tronmalwarerun.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $tronmalwarerun.FlatAppearance.BorderSize = 1
 
 $tronsystemcleanuprun            = New-Object system.Windows.Forms.Button
@@ -914,7 +915,7 @@ $tronsystemcleanuprun.BackColor               = [System.Drawing.ColorTranslator]
 $tronsystemcleanuprun.ForeColor               = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $tronsystemcleanuprun.BorderStyle               = [System.Windows.Forms.BorderStyle]::FixedSingle
 $tronsystemcleanuprun.FlatStyle                 = [System.Windows.Forms.FlatStyle]::Flat
-$tronsystemcleanuprun.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$tronsystemcleanuprun.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $tronsystemcleanuprun.FlatAppearance.BorderSize = 1
 
 $ncpa                            = New-Object system.Windows.Forms.Button
@@ -927,7 +928,7 @@ $ncpa.BackColor                   = [System.Drawing.ColorTranslator]::FromHtml("
 $ncpa.ForeColor                   = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $ncpa.BorderStyle                 = [System.Windows.Forms.BorderStyle]::FixedSingle
 $ncpa.FlatStyle                   = [System.Windows.Forms.FlatStyle]::Flat
-$ncpa.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$ncpa.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $ncpa.FlatAppearance.BorderSize = 1
 
 $oldcontrolpanel                 = New-Object system.Windows.Forms.Button
@@ -940,7 +941,7 @@ $oldcontrolpanel.BackColor        = [System.Drawing.ColorTranslator]::FromHtml("
 $oldcontrolpanel.ForeColor        = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $oldcontrolpanel.BorderStyle      = [System.Windows.Forms.BorderStyle]::FixedSingle
 $oldcontrolpanel.FlatStyle        = [System.Windows.Forms.FlatStyle]::Flat
-$oldcontrolpanel.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$oldcontrolpanel.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $oldcontrolpanel.FlatAppearance.BorderSize = 1
 
 $oldsoundpanel                   = New-Object system.Windows.Forms.Button
@@ -953,7 +954,7 @@ $oldsoundpanel.BackColor          = [System.Drawing.ColorTranslator]::FromHtml("
 $oldsoundpanel.ForeColor          = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $oldsoundpanel.BorderStyle       = [System.Windows.Forms.BorderStyle]::FixedSingle
 $oldsoundpanel.FlatStyle         = [System.Windows.Forms.FlatStyle]::Flat
-$oldsoundpanel.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$oldsoundpanel.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $oldsoundpanel.FlatAppearance.BorderSize = 1
 
 $oldsystempanel                  = New-Object system.Windows.Forms.Button
@@ -966,7 +967,7 @@ $oldsystempanel.BackColor         = [System.Drawing.ColorTranslator]::FromHtml("
 $oldsystempanel.ForeColor         = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $oldsystempanel.BorderStyle      = [System.Windows.Forms.BorderStyle]::FixedSingle
 $oldsystempanel.FlatStyle        = [System.Windows.Forms.FlatStyle]::Flat
-$oldsystempanel.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$oldsystempanel.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $oldsystempanel.FlatAppearance.BorderSize = 1
 
 $NFS                             = New-Object system.Windows.Forms.Button
@@ -979,7 +980,7 @@ $NFS.BackColor                   = [System.Drawing.ColorTranslator]::FromHtml("#
 $NFS.ForeColor                   = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $NFS.BorderStyle                 = [System.Windows.Forms.BorderStyle]::FixedSingle
 $NFS.FlatStyle                   = [System.Windows.Forms.FlatStyle]::Flat
-$NFS.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$NFS.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $NFS.FlatAppearance.BorderSize = 1
 
 $laptopnumlock                   = New-Object system.Windows.Forms.Button
@@ -992,7 +993,7 @@ $laptopnumlock.BackColor         = [System.Drawing.ColorTranslator]::FromHtml("#
 $laptopnumlock.ForeColor         = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $laptopnumlock.BorderStyle       = [System.Windows.Forms.BorderStyle]::FixedSingle
 $laptopnumlock.FlatStyle         = [System.Windows.Forms.FlatStyle]::Flat
-$laptopnumlock.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$laptopnumlock.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $laptopnumlock.FlatAppearance.BorderSize = 1
 
 $disableupdates                  = New-Object system.Windows.Forms.Button
@@ -1005,7 +1006,7 @@ $disableupdates.BackColor        = [System.Drawing.ColorTranslator]::FromHtml("#
 $disableupdates.ForeColor        = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $disableupdates.BorderStyle      = [System.Windows.Forms.BorderStyle]::FixedSingle
 $disableupdates.FlatStyle        = [System.Windows.Forms.FlatStyle]::Flat
-$disableupdates.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$disableupdates.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $disableupdates.FlatAppearance.BorderSize = 1
 
 $enableupdates                   = New-Object system.Windows.Forms.Button
@@ -1018,7 +1019,7 @@ $enableupdates.BackColor         = [System.Drawing.ColorTranslator]::FromHtml("#
 $enableupdates.ForeColor         = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $enableupdates.BorderStyle       = [System.Windows.Forms.BorderStyle]::FixedSingle
 $enableupdates.FlatStyle         = [System.Windows.Forms.FlatStyle]::Flat
-$enableupdates.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$enableupdates.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $enableupdates.FlatAppearance.BorderSize = 1
 
 $Label12                         = New-Object system.Windows.Forms.Label
@@ -1040,7 +1041,7 @@ $Virtualization.BackColor        = [System.Drawing.ColorTranslator]::FromHtml("#
 $Virtualization.ForeColor        = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $Virtualization.BorderStyle      = [System.Windows.Forms.BorderStyle]::FixedSingle
 $Virtualization.FlatStyle        = [System.Windows.Forms.FlatStyle]::Flat
-$Virtualization.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$Virtualization.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $Virtualization.FlatAppearance.BorderSize = 1
 
 $oldpower                        = New-Object system.Windows.Forms.Button
@@ -1053,7 +1054,7 @@ $oldpower.BackColor              = [System.Drawing.ColorTranslator]::FromHtml("#
 $oldpower.ForeColor              = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $oldpower.BorderStyle            = [System.Windows.Forms.BorderStyle]::FixedSingle
 $oldpower.FlatStyle              = [System.Windows.Forms.FlatStyle]::Flat
-$oldpower.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$oldpower.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $oldpower.FlatAppearance.BorderSize = 1
 
 $restorepower                    = New-Object system.Windows.Forms.Button
@@ -1066,7 +1067,7 @@ $restorepower.BackColor          = [System.Drawing.ColorTranslator]::FromHtml("#
 $restorepower.ForeColor          = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 $restorepower.BorderStyle        = [System.Windows.Forms.BorderStyle]::FixedSingle
 $restorepower.FlatStyle          = [System.Windows.Forms.FlatStyle]::Flat
-$restorepower.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#00adef")
+$restorepower.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $restorepower.FlatAppearance.BorderSize = 1
 
 $Form.controls.AddRange(@($Panel1,$Panel2,$Label3,$Label15,$Panel4,$PictureBox1,$Label1,$Panel3,$ResultText,$Label10,$Label11,$tronfullrun,$tronmalwarerun,$tronsystemcleanuprun))
