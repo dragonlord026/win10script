@@ -12,23 +12,25 @@ If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
 }
 
 # GUI Specs
-Write-Host "Checking winget..."
+Write-Host "Checking chocolatey..."
 
-# Check if winget is installed
-if (Test-Path ~\AppData\Local\Microsoft\WindowsApps\winget.exe)
+# Check if chocolatey is installed
+if (Test-Path 'C:\ProgramData\chocolatey\bin\choco.exe')
 {
-    'Winget Already Installed'
+    Write-Host 'Chocolatey Already Installed'
+    Write-Host 'Updating Chocalety'
+
+    choco upgrade chocolatey
+
 }
 else
 {
-    # Installing winget from the Microsoft Store
-    Write-Host "Winget not found, installing it now."
-    $ResultText.text = "`r`n" + "`r`n" + "Installing Winget... Please Wait"
-    Start-Process "ms-appinstaller:?source=https://aka.ms/getwinget"
-    $nid = (Get-Process AppInstaller).Id
-    Wait-Process -Id $nid
-    Write-Host Winget Installed
-    $ResultText.text = "`r`n" + "`r`n" + "Winget Installed - Ready for Next Task"
+
+    Write-Host "Chocolatey not found, installing it now."
+    $ResultText.text = "`r`n" + "`r`n" + "Installing Chocolatey... Please Wait"
+    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+    Write-Host Chocolatey Installed
+    $ResultText.text = "`r`n" + "`r`n" + "Chocolatey Installed - Ready for Next Task"
 }
 
 $Form = New-Object system.Windows.Forms.Form
@@ -74,7 +76,7 @@ $Label2.text = "Utilities"
 $Label2.AutoSize = $true
 $Label2.width = 25
 $Label2.height = 10
-$Label2.location = New-Object System.Drawing.Point(67,11)
+$Label2.location = New-Object System.Drawing.Point(67, 11)
 $Label2.Font = New-Object System.Drawing.Font('Consolas', 10, [System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
 $Label2.ForeColor = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 
@@ -243,18 +245,18 @@ $brave.FlatStyle = [System.Windows.Forms.FlatStyle]::Flat
 $brave.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $brave.FlatAppearance.BorderSize = 1
 
-$firefox = New-Object system.Windows.Forms.Button
-$firefox.text = "Firefox"
-$firefox.width = 211
-$firefox.height = 30
-$firefox.location = New-Object System.Drawing.Point(4, 461)
-$firefox.Font = New-Object System.Drawing.Font('Consolas', 12)
-$firefox.BackColor = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
-$firefox.ForeColor = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
-$firefox.BorderStyle = [System.Windows.Forms.BorderStyle]::FixedSingle
-$firefox.FlatStyle = [System.Windows.Forms.FlatStyle]::Flat
-$firefox.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
-$firefox.FlatAppearance.BorderSize = 1
+$operagx = New-Object system.Windows.Forms.Button
+$operagx.text = "Opera GX"
+$operagx.width = 211
+$operagx.height = 30
+$operagx.location = New-Object System.Drawing.Point(4, 461)
+$operagx.Font = New-Object System.Drawing.Font('Consolas', 12)
+$operagx.BackColor = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$operagx.ForeColor = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$operagx.BorderStyle = [System.Windows.Forms.BorderStyle]::FixedSingle
+$operagx.FlatStyle = [System.Windows.Forms.FlatStyle]::Flat
+$operagx.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
+$operagx.FlatAppearance.BorderSize = 1
 
 $gchrome = New-Object system.Windows.Forms.Button
 $gchrome.text = "Google Chrome"
@@ -330,18 +332,18 @@ $vlc.FlatStyle = [System.Windows.Forms.FlatStyle]::Flat
 $vlc.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $vlc.FlatAppearance.BorderSize = 1
 
-$mpc = New-Object system.Windows.Forms.Button
-$mpc.text = "Media Player Classic"
-$mpc.width = 211
-$mpc.height = 30
-$mpc.location = New-Object System.Drawing.Point(4, 688)
-$mpc.Font = New-Object System.Drawing.Font('Consolas', 12)
-$mpc.BackColor = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
-$mpc.ForeColor = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
-$mpc.BorderStyle = [System.Windows.Forms.BorderStyle]::FixedSingle
-$mpc.FlatStyle = [System.Windows.Forms.FlatStyle]::Flat
-$mpc.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
-$mpc.FlatAppearance.BorderSize = 1
+$itunes = New-Object system.Windows.Forms.Button
+$itunes.text = "iTunes"
+$itunes.width = 211
+$itunes.height = 30
+$itunes.location = New-Object System.Drawing.Point(4, 688)
+$itunes.Font = New-Object System.Drawing.Font('Consolas', 12)
+$itunes.BackColor = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$itunes.ForeColor = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$itunes.BorderStyle = [System.Windows.Forms.BorderStyle]::FixedSingle
+$itunes.FlatStyle = [System.Windows.Forms.FlatStyle]::Flat
+$itunes.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
+$itunes.FlatAppearance.BorderSize = 1
 
 $Label7 = New-Object system.Windows.Forms.Label
 $Label7.text = "Document Tools"
@@ -404,18 +406,18 @@ $adobereader.FlatStyle = [System.Windows.Forms.FlatStyle]::Flat
 $adobereader.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $adobereader.FlatAppearance.BorderSize = 1
 
-$sumatrapdf = New-Object system.Windows.Forms.Button
-$sumatrapdf.text = "Sumatra PDF"
-$sumatrapdf.width = 211
-$sumatrapdf.height = 30
-$sumatrapdf.location = New-Object System.Drawing.Point(4, 882)
-$sumatrapdf.Font = New-Object System.Drawing.Font('Consolas', 12)
-$sumatrapdf.BackColor = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
-$sumatrapdf.ForeColor = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
-$sumatrapdf.BorderStyle = [System.Windows.Forms.BorderStyle]::FixedSingle
-$sumatrapdf.FlatStyle = [System.Windows.Forms.FlatStyle]::Flat
-$sumatrapdf.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
-$sumatrapdf.FlatAppearance.BorderSize = 1
+$jetbrains = New-Object system.Windows.Forms.Button
+$jetbrains.text = "Jetbrains Hub"
+$jetbrains.width = 211
+$jetbrains.height = 30
+$jetbrains.location = New-Object System.Drawing.Point(4, 882)
+$jetbrains.Font = New-Object System.Drawing.Font('Consolas', 12)
+$jetbrains.BackColor = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$jetbrains.ForeColor = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$jetbrains.BorderStyle = [System.Windows.Forms.BorderStyle]::FixedSingle
+$jetbrains.FlatStyle = [System.Windows.Forms.FlatStyle]::Flat
+$jetbrains.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
+$jetbrains.FlatAppearance.BorderSize = 1
 
 $Panel2 = New-Object system.Windows.Forms.Panel
 $Panel2.height = 939
@@ -1071,7 +1073,7 @@ $PictureBox1.imageLocation = "https://github.com/dragonlord026/win10script/blob/
 $PictureBox1.SizeMode = [System.Windows.Forms.PictureBoxSizeMode]::zoom
 
 $Form.controls.AddRange(@($Panel1, $Panel2, $Label3, $Label15, $Panel4, $PictureBox1, $Label1, $Panel3, $ResultText, $Label10, $Label11, $tronfullrun, $tronmalwarerun, $tronsystemcleanuprun))
-$Panel1.controls.AddRange(@($brave, $firefox, $7zip, $sharex, $adobereader, $notepad, $gchrome, $mpc, $vlc, $powertoys, $winterminal, $vscode, $Label2, $everythingsearch, $sumatrapdf, $vscodium, $imageglass, $gimp, $Label7, $Label8, $Label9, $advancedipscanner, $putty, $etcher, $translucenttb, $githubdesktop, $discord, $autohotkey))
+$Panel1.controls.AddRange(@($brave, $operagx, $7zip, $sharex, $adobereader, $notepad, $gchrome, $itunes, $vlc, $powertoys, $winterminal, $vscode, $Label2, $everythingsearch, $jetbrains, $vscodium, $imageglass, $gimp, $Label7, $Label8, $Label9, $advancedipscanner, $putty, $etcher, $translucenttb, $githubdesktop, $discord, $autohotkey))
 $Panel2.controls.AddRange(@($essentialtweaks, $backgroundapps, $cortana, $actioncenter, $darkmode, $performancefx, $onedrive, $lightmode, $essentialundo, $EActionCenter, $ECortana, $RBackgroundApps, $HTrayIcons, $EClipboardHistory, $ELocation, $InstallOneDrive, $removebloat, $reinstallbloat, $WarningLabel, $Label5, $appearancefx, $STrayIcons, $EHibernation, $dualboottime))
 $Panel3.controls.AddRange(@($yourphonefix, $ncpa, $oldcontrolpanel, $oldsoundpanel, $oldsystempanel, $NFS, $laptopnumlock, $Virtualization, $oldpower, $restorepower))
 $Panel4.controls.AddRange(@($defaultwindowsupdate, $securitywindowsupdate, $Label16, $Label17, $Label18, $Label19, $windowsupdatefix, $disableupdates, $enableupdates, $Label12))
@@ -1080,7 +1082,7 @@ $Panel4.controls.AddRange(@($defaultwindowsupdate, $securitywindowsupdate, $Labe
 $winterminal.Add_Click({
     Write-Host "Installing New Windows Terminal"
     $ResultText.text = "`r`n" + "`r`n" + "Installing New Windows Terminal... Please Wait"
-    winget install -e Microsoft.WindowsTerminal | Out-Host
+    cinst microsoft-windows-terminal --verbose --no-color --accept-license --confirm | Out-Host
     if ($?)
     {
         Write-Host "Installed New Windows Terminal"
@@ -1091,7 +1093,7 @@ $winterminal.Add_Click({
 $powertoys.Add_Click({
     Write-Host "Installing Microsoft PowerToys"
     $ResultText.text = "`r`n" + "`r`n" + "Installing Microsoft PowerToys... Please Wait"
-    winget install -e Microsoft.PowerToys | Out-Host
+    cinst powertoys --verbose --no-color --accept-license --confirm | Out-Host
     if ($?)
     {
         Write-Host "Installed Microsoft PowerToys"
@@ -1102,7 +1104,7 @@ $powertoys.Add_Click({
 $7zip.Add_Click({
     Write-Host "Installing 7-Zip Compression Tool"
     $ResultText.text = "`r`n" + "`r`n" + "Installing 7-Zip Compression Tool... Please Wait"
-    winget install -e 7zip.7zip | Out-Host
+    cinst 7zip --verbose --no-color --accept-license --confirm | Out-Host
     if ($?)
     {
         Write-Host "Installed 7-Zip Compression Tool"
@@ -1113,7 +1115,7 @@ $7zip.Add_Click({
 $autohotkey.Add_Click({
     Write-Host "Installing AutoHotkey"
     $ResultText.text = "`r`n" + "`r`n" + "Installing AutoHotkey... Please Wait"
-    winget install -e Lexikos.AutoHotkey | Out-Host
+    cinst autohotkey --verbose --no-color --accept-license --confirm | Out-Host
     if ($?)
     {
         Write-Host "Installed AutoHotkey"
@@ -1124,7 +1126,7 @@ $autohotkey.Add_Click({
 $discord.Add_Click({
     Write-Host "Installing Discord"
     $ResultText.text = "`r`n" + "`r`n" + "Installing Discord... Please Wait"
-    winget install -e Discord.Discord | Out-Host
+    cinst discord --verbose --no-color --accept-license --confirm | Out-Host
     if ($?)
     {
         Write-Host "Installed Discord"
@@ -1135,8 +1137,8 @@ $discord.Add_Click({
 $githubdesktop.Add_Click({
     Write-Host "Installing Git and GitHub Desktop"
     $ResultText.text = "`r`n" + "`r`n" + "Installing Git and GitHub Desktop... Please Wait"
-    winget install -e Git.Git | Out-Host
-    winget install -e GitHub.GitHubDesktop | Out-Host
+    cinst git --verbose --no-color --accept-license --confirm | Out-Host
+    cinst github-desktop --verbose --no-color --accept-license --confirm | Out-Host
     Write-Host "Installed Git and Github Desktop"
     $ResultText.text = "`r`n" + "Finished Installing Git and GitHub Desktop" + "`r`n" + "`r`n" + "Ready for Next Task"
 })
@@ -1144,7 +1146,7 @@ $githubdesktop.Add_Click({
 $translucenttb.Add_Click({
     Write-Host "Installing Translucent Taskbar"
     $ResultText.text = "`r`n" + "`r`n" + "Installing Translucent Taskbar... Please Wait"
-    winget install -e TranslucentTB.TranslucentTB | Out-Host
+    cinst translucenttb --verbose --no-color --accept-license --confirm | Out-Host
     Write-Host "Installed Translucent Taskbar"
     $ResultText.text = "`r`n" + "Finished Installing Translucent Taskbar" + "`r`n" + "`r`n" + "Ready for Next Task"
 })
@@ -1152,7 +1154,7 @@ $translucenttb.Add_Click({
 $etcher.Add_Click({
     Write-Host "Installing Etcher USB Imager"
     $ResultText.text = "`r`n" + "`r`n" + "Installing Etcher USB Imager... Please Wait"
-    winget install -e Balena.Etcher | Out-Host
+    cinst etcher --verbose --no-color --accept-license --confirm | Out-Host
     Write-Host "Installed Etcher USB Imager"
     $ResultText.text = "`r`n" + "Finished Installing Etcher USB Imager" + "`r`n" + "`r`n" + "Ready for Next Task"
 })
@@ -1160,8 +1162,8 @@ $etcher.Add_Click({
 $putty.Add_Click({
     Write-Host "Installing PuTTY & WinSCP"
     $ResultText.text = "`r`n" + "`r`n" + "Installing PuTTY & WinSCP... Please Wait"
-    winget install -e PuTTY.PuTTY | Out-Host
-    winget install -e WinSCP.WinSCP | Out-Host
+    cinst putty --verbose --no-color --accept-license --confirm | Out-Host
+    cinst winscp --verbose --no-color --accept-license --confirm | Out-Host
     Write-Host "Installed PuTTY & WinSCP"
     $ResultText.text = "`r`n" + "Finished Installing PuTTY & WinSCP" + "`r`n" + "`r`n" + "Ready for Next Task"
 })
@@ -1169,7 +1171,7 @@ $putty.Add_Click({
 $advancedipscanner.Add_Click({
     Write-Host "Installing Advanced IP Scanner"
     $ResultText.text = "`r`n" + "`r`n" + "Installing Advanced IP Scanner... Please Wait"
-    winget install -e Famatech.AdvancedIPScanner | Out-Host
+    cinst advanced-ipscanner --verbose --no-color --accept-license --confirm | Out-Host
     Write-Host "Installed Advanced IP Scanner"
     $ResultText.text = "`r`n" + "Finished Installing Advanced IP Scanner" + "`r`n" + "`r`n" + "Ready for Next Task"
 })
@@ -1177,7 +1179,7 @@ $advancedipscanner.Add_Click({
 $everythingsearch.Add_Click({
     Write-Host "Installing Voidtools Everything Search"
     $ResultText.text = "`r`n" + "`r`n" + "Installing Voidtools Everything Search... Please Wait"
-    winget install -e voidtools.Everything --source winget | Out-Host
+    cinst everything --verbose --no-color --accept-license --confirm | Out-Host
     if ($?)
     {
         Write-Host "Installed Everything Search"
@@ -1188,7 +1190,7 @@ $everythingsearch.Add_Click({
 $brave.Add_Click({
     Write-Host "Installing Brave Browser"
     $ResultText.text = "`r`n" + "`r`n" + "Installing Brave... Please Wait"
-    winget install -e BraveSoftware.BraveBrowser | Out-Host
+    cinst brave --verbose --no-color --accept-license --confirm | Out-Host
     if ($?)
     {
         Write-Host "Installed Brave Browser"
@@ -1196,21 +1198,25 @@ $brave.Add_Click({
     $ResultText.text = "`r`n" + "Finished Installing Brave" + "`r`n" + "`r`n" + "Ready for Next Task"
 })
 
-$firefox.Add_Click({
-    Write-Host "Installing Firefox"
-    $ResultText.text = "`r`n" + "`r`n" + "Installing Firefox... Please Wait"
-    winget install -e Mozilla.Firefox | Out-Host
+$operagx.Add_Click({
+    Write-Host "Installing Opera GX"
+    $ResultText.text = "`r`n" + "`r`n" + "Installing Opera GX... Please Wait"
+    cinst opera-gx --verbose --no-color --accept-license --confirm | Out-Host
     if ($?)
     {
-        Write-Host "Installed Firefox"
+        Write-Host "Installed Opera GX"
     }
-    $ResultText.text = "`r`n" + "Finished Installing Firefox" + "`r`n" + "`r`n" + "Ready for Next Task"
+    $ResultText.text = "`r`n" + "Finished Installing Opera GX" + "`r`n" + "`r`n" + "Ready for Next Task"
 })
 
 $gchrome.Add_Click({
     Write-Host "Installing Google Chrome"
     $ResultText.text = "`r`n" + "`r`n" + "Installing Google Chrome... Please Wait"
-    winget install -e Google.Chrome | Out-Host
+    cinst googlechrome --verbose --no-color --accept-license --confirm | Out-Host
+    cinst waybackmachine-chrome --verbose --no-color --accept-license --confirm | Out-Host
+    cinst https-everywhere-chrome --verbose --no-color --accept-license --confirm | Out-Host
+    cinst adblockpluschrome --verbose --no-color --accept-license --confirm | Out-Host
+    cinst sponsorblock-for-youtube-chrome --verbose --no-color --accept-license --confirm | Out-Host
     if ($?)
     {
         Write-Host "Installed Google Chrome"
@@ -1221,7 +1227,7 @@ $gchrome.Add_Click({
 $sharex.Add_Click({
     Write-Host "Installing ShareX Screenshot Tool"
     $ResultText.text = "`r`n" + "`r`n" + "Installing ShareX Screenshot Tool... Please Wait"
-    winget install -e ShareX.ShareX | Out-Host
+    cinst sharex --verbose --no-color --accept-license --confirm | Out-Host
     Write-Host "Installed ShareX Screenshot Tool"
     $ResultText.text = "`r`n" + "Finished Installing ShareX Screenshot Tool" + "`r`n" + "`r`n" + "Ready for Next Task"
 })
@@ -1229,7 +1235,7 @@ $sharex.Add_Click({
 $imageglass.Add_Click({
     Write-Host "Installing Image Glass (Image Viewer)"
     $ResultText.text = "`r`n" + "`r`n" + "Installing Image Glass... Please Wait"
-    winget install -e DuongDieuPhap.ImageGlass | Out-Host
+    cinst imageglass --verbose --no-color --accept-license --confirm | Out-Host
     if ($?)
     {
         Write-Host "Installed Image Glass (Image Viewer)"
@@ -1240,7 +1246,7 @@ $imageglass.Add_Click({
 $gimp.Add_Click({
     Write-Host "Installing Gimp Image Editor"
     $ResultText.text = "`r`n" + "`r`n" + "Installing Gimp Image Editor... Please Wait"
-    winget install -e GIMP.GIMP | Out-Host
+    cinst gimp --verbose --no-color --accept-license --confirm | Out-Host
     Write-Host "Installed Gimp Image Editor"
     $ResultText.text = "`r`n" + "Finished Installing Gimp Image Editor" + "`r`n" + "`r`n" + "Ready for Next Task"
 })
@@ -1248,7 +1254,7 @@ $gimp.Add_Click({
 $vlc.Add_Click({
     Write-Host "Installing VLC Media Player"
     $ResultText.text = "`r`n" + "`r`n" + "Installing VLC Media Player... Please Wait"
-    winget install -e VideoLAN.VLC | Out-Host
+    cinst vlc --verbose --no-color --accept-license --confirm | Out-Host
     if ($?)
     {
         Write-Host "Installed VLC Media Player"
@@ -1256,21 +1262,21 @@ $vlc.Add_Click({
     $ResultText.text = "`r`n" + "Finished Installing VLC Media Player" + "`r`n" + "`r`n" + "Ready for Next Task"
 })
 
-$mpc.Add_Click({
-    Write-Host "Installing Media Player Classic"
-    $ResultText.text = "`r`n" + "`r`n" + "Installing Media Player Classic... Please Wait"
-    winget install -e clsid2.mpc-hc | Out-Host
+$itunes.Add_Click({
+    Write-Host "Installing iTunes"
+    $ResultText.text = "`r`n" + "`r`n" + "Installing iTunes... Please Wait"
+    cinst itunes --verbose --no-color --accept-license --confirm | Out-Host
     if ($?)
     {
-        Write-Host "Installed Media Player Classic"
+        Write-Host "Installed iTunes"
     }
-    $ResultText.text = "`r`n" + "Finished Installing Media Player Classic" + "`r`n" + "`r`n" + "Ready for Next Task"
+    $ResultText.text = "`r`n" + "Finished Installing iTunes" + "`r`n" + "`r`n" + "Ready for Next Task"
 })
 
 $vscodium.Add_Click({
     Write-Host "Installing VS Codium"
     $ResultText.text = "`r`n" + "`r`n" + "Installing VS Codium... Please Wait"
-    winget install -e VSCodium.VSCodium | Out-Host
+    cinst vscodium --verbose --no-color --accept-license --confirm | Out-Host
     if ($?)
     {
         Write-Host "Installed VS Codium"
@@ -1281,7 +1287,7 @@ $vscodium.Add_Click({
 $vscode.Add_Click({
     Write-Host "Installing Visual Studio Code"
     $ResultText.text = "`r`n" + "`r`n" + "Installing Visual Studio Code... Please Wait"
-    winget install -e Microsoft.VisualStudioCode --source winget | Out-Host
+    cinst vscode --verbose --no-color --accept-license --confirm | Out-Host
     if ($?)
     {
         Write-Host "Installed Visual Studio Code"
@@ -1292,7 +1298,7 @@ $vscode.Add_Click({
 $notepad.Add_Click({
     Write-Host "Installing Notepad++"
     $ResultText.text = "`r`n" + "`r`n" + "Installing Notepad++... Please Wait"
-    winget install -e Notepad++.Notepad++ | Out-Host
+    cinst notepadplusplus --verbose --no-color --accept-license --confirm | Out-Host
     if ($?)
     {
         Write-Host "Installed Notepad++"
@@ -1303,7 +1309,7 @@ $notepad.Add_Click({
 $adobereader.Add_Click({
     Write-Host "Installing Adobe Reader DC"
     $ResultText.text = "`r`n" + "`r`n" + "Installing Adobe Reader DC... Please Wait"
-    winget install -e --id Adobe.Acrobat.Reader.64-bit | Out-Host
+    cinst adobereader --verbose --no-color --accept-license --confirm | Out-Host
     if ($?)
     {
         Write-Host "Installed Adobe Reader DC"
@@ -1311,15 +1317,15 @@ $adobereader.Add_Click({
     $ResultText.text = "`r`n" + "Finished Installing Adobe Reader DC" + "`r`n" + "`r`n" + "Ready for Next Task"
 })
 
-$sumatrapdf.Add_Click({
-    Write-Host "Installing Sumatra PDF"
-    $ResultText.text = "`r`n" + "`r`n" + "Installing Sumatra PDF... Please Wait"
-    winget install -e SumatraPDF.SumatraPDF | Out-Host
+$jetbrains.Add_Click({
+    Write-Host "Installing Jetbrains Hub"
+    $ResultText.text = "`r`n" + "`r`n" + "Installing Jetbrains Hub... Please Wait"
+    cinst jetbrainstoolbox --verbose --no-color --accept-license --confirm | Out-Host
     if ($?)
     {
-        Write-Host "Installed Sumatra PDF"
+        Write-Host "Installed Jetbrains Hub"
     }
-    $ResultText.text = "`r`n" + "Finished Installing Sumatra PDF" + "`r`n" + "`r`n" + "Ready for Next Task"
+    $ResultText.text = "`r`n" + "Finished Installing Jetbrains Hub" + "`r`n" + "`r`n" + "Ready for Next Task"
 })
 
 $essentialtweaks.Add_Click({
