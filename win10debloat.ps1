@@ -859,18 +859,18 @@ $oldsystempanel.FlatStyle = [System.Windows.Forms.FlatStyle]::Flat
 $oldsystempanel.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
 $oldsystempanel.FlatAppearance.BorderSize = 1
 
-$yourphonefix = New-Object system.Windows.Forms.Button
-$yourphonefix.text = "Your Phone App Fix"
-$yourphonefix.width = 211
-$yourphonefix.height = 30
-$yourphonefix.location = New-Object System.Drawing.Point(4, 330)
-$yourphonefix.Font = New-Object System.Drawing.Font('Consolas', 12)
-$yourphonefix.BackColor = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
-$yourphonefix.ForeColor = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
-$yourphonefix.BorderStyle = [System.Windows.Forms.BorderStyle]::FixedSingle
-$yourphonefix.FlatStyle = [System.Windows.Forms.FlatStyle]::Flat
-$yourphonefix.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
-$yourphonefix.FlatAppearance.BorderSize = 1
+$updateapps = New-Object system.Windows.Forms.Button
+$updateapps.text = "Update Apps"
+$updateapps.width = 211
+$updateapps.height = 30
+$updateapps.location = New-Object System.Drawing.Point(4, 330)
+$updateapps.Font = New-Object System.Drawing.Font('Consolas', 12)
+$updateapps.BackColor = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$updateapps.ForeColor = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$updateapps.BorderStyle = [System.Windows.Forms.BorderStyle]::FixedSingle
+$updateapps.FlatStyle = [System.Windows.Forms.FlatStyle]::Flat
+$updateapps.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
+$updateapps.FlatAppearance.BorderSize = 1
 
 $Panel4 = New-Object system.Windows.Forms.Panel
 $Panel4.height = 360
@@ -1075,7 +1075,7 @@ $PictureBox1.SizeMode = [System.Windows.Forms.PictureBoxSizeMode]::zoom
 $Form.controls.AddRange(@($Panel1, $Panel2, $Label3, $Label15, $Panel4, $PictureBox1, $Label1, $Panel3, $ResultText, $Label10, $Label11, $tronfullrun, $tronmalwarerun, $tronsystemcleanuprun))
 $Panel1.controls.AddRange(@($brave, $operagx, $7zip, $sharex, $adobereader, $notepad, $gchrome, $itunes, $vlc, $powertoys, $winterminal, $vscode, $Label2, $everythingsearch, $jetbrains, $vscodium, $imageglass, $gimp, $Label7, $Label8, $Label9, $advancedipscanner, $putty, $etcher, $translucenttb, $githubdesktop, $discord, $autohotkey))
 $Panel2.controls.AddRange(@($essentialtweaks, $backgroundapps, $cortana, $actioncenter, $darkmode, $performancefx, $onedrive, $lightmode, $essentialundo, $EActionCenter, $ECortana, $RBackgroundApps, $HTrayIcons, $EClipboardHistory, $ELocation, $InstallOneDrive, $removebloat, $reinstallbloat, $WarningLabel, $Label5, $appearancefx, $STrayIcons, $EHibernation, $dualboottime))
-$Panel3.controls.AddRange(@($yourphonefix, $ncpa, $oldcontrolpanel, $oldsoundpanel, $oldsystempanel, $NFS, $laptopnumlock, $Virtualization, $oldpower, $restorepower))
+$Panel3.controls.AddRange(@($updateapps, $ncpa, $oldcontrolpanel, $oldsoundpanel, $oldsystempanel, $NFS, $laptopnumlock, $Virtualization, $oldpower, $restorepower))
 $Panel4.controls.AddRange(@($defaultwindowsupdate, $securitywindowsupdate, $Label16, $Label17, $Label18, $Label19, $windowsupdatefix, $disableupdates, $enableupdates, $Label12))
 
 
@@ -2308,20 +2308,11 @@ $oldsystempanel.Add_Click({
     cmd /c sysdm.cpl
 })
 
-$yourphonefix.Add_Click({
-    Write-Host "Reinstalling Your Phone App"
-    Add-AppxPackage -DisableDevelopmentMode -Register "$( $( Get-AppXPackage -AllUsers "Microsoft.YourPhone" ).InstallLocation )\AppXManifest.xml"
-    Write-Host "Enable needed data collection for Your Phone..."
-    Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System" -Name "EnableMmx" -Type DWord -Value 1
-    Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System" -Name "EnableCdp" -Type DWord -Value 1
-    Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Messaging" -Name "AllowMessageSync" -Type DWord -Value 1
-    Write-Host "Allowing Background Apps..."
-    Get-ChildItem -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications" -Exclude "Microsoft.Windows.Cortana*" | ForEach {
-        Remove-ItemProperty -Path $_.PsPath -Name "Disabled" -ErrorAction SilentlyContinue
-        Remove-ItemProperty -Path $_.PsPath -Name "DisabledByUser" -ErrorAction SilentlyContinue
-    }
-    Write-Host "You may need to Reboot and right-click Your Phone app and select repair"
-    $ResultText.text = "`r`n" + "`r`n" + "You may need to Reboot and right-click Your Phone app and select repair"
+$updateapps.Add_Click({
+    Write-Host "Updating all Availble Apps"
+    cup all --verbose --no-color --accept-license --confirm | Out-Host
+    Write-Host "Update Complete"
+    $ResultText.text = "`r`n" + "Finished Updating Apps" + "`r`n" + "`r`n" + "Ready for Next Task"
 })
 
 $defaultwindowsupdate.Add_Click({
