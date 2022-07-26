@@ -354,18 +354,18 @@ $Label7.location = New-Object System.Drawing.Point(60, 728)
 $Label7.Font = New-Object System.Drawing.Font('Consolas', 10, [System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
 $Label7.ForeColor = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
 
-$vscodium = New-Object system.Windows.Forms.Button
-$vscodium.text = "VS Codium"
-$vscodium.width = 211
-$vscodium.height = 30
-$vscodium.location = New-Object System.Drawing.Point(4, 750)
-$vscodium.Font = New-Object System.Drawing.Font('Consolas', 12)
-$vscodium.BackColor = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
-$vscodium.ForeColor = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
-$vscodium.BorderStyle = [System.Windows.Forms.BorderStyle]::FixedSingle
-$vscodium.FlatStyle = [System.Windows.Forms.FlatStyle]::Flat
-$vscodium.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
-$vscodium.FlatAppearance.BorderSize = 1
+$gamelaunchers = New-Object system.Windows.Forms.Button
+$gamelaunchers.text = "Game Launchers"
+$gamelaunchers.width = 211
+$gamelaunchers.height = 30
+$gamelaunchers.location = New-Object System.Drawing.Point(4, 750)
+$gamelaunchers.Font = New-Object System.Drawing.Font('Consolas', 12)
+$gamelaunchers.BackColor = [System.Drawing.ColorTranslator]::FromHtml("#44475a")
+$gamelaunchers.ForeColor = [System.Drawing.ColorTranslator]::FromHtml("#bd93f9")
+$gamelaunchers.BorderStyle = [System.Windows.Forms.BorderStyle]::FixedSingle
+$gamelaunchers.FlatStyle = [System.Windows.Forms.FlatStyle]::Flat
+$gamelaunchers.FlatAppearance.BorderColor = [System.Drawing.ColorTranslator]::FromHtml("#8be9fd")
+$gamelaunchers.FlatAppearance.BorderSize = 1
 
 $vscode = New-Object system.Windows.Forms.Button
 $vscode.text = "VS Code"
@@ -1073,7 +1073,7 @@ $PictureBox1.imageLocation = "https://github.com/dragonlord026/win10script/blob/
 $PictureBox1.SizeMode = [System.Windows.Forms.PictureBoxSizeMode]::zoom
 
 $Form.controls.AddRange(@($Panel1, $Panel2, $Label3, $Label15, $Panel4, $PictureBox1, $Label1, $Panel3, $ResultText, $Label10, $Label11, $tronfullrun, $tronmalwarerun, $tronsystemcleanuprun))
-$Panel1.controls.AddRange(@($brave, $operagx, $7zip, $sharex, $adobereader, $notepad, $gchrome, $itunes, $vlc, $powertoys, $winterminal, $vscode, $Label2, $everythingsearch, $jetbrains, $vscodium, $imageglass, $gimp, $Label7, $Label8, $Label9, $advancedipscanner, $putty, $etcher, $translucenttb, $githubdesktop, $discord, $autohotkey))
+$Panel1.controls.AddRange(@($brave, $operagx, $7zip, $sharex, $adobereader, $notepad, $gchrome, $itunes, $vlc, $powertoys, $winterminal, $vscode, $Label2, $everythingsearch, $jetbrains, $gamelaunchers, $imageglass, $gimp, $Label7, $Label8, $Label9, $advancedipscanner, $putty, $etcher, $translucenttb, $githubdesktop, $discord, $autohotkey))
 $Panel2.controls.AddRange(@($essentialtweaks, $backgroundapps, $cortana, $actioncenter, $darkmode, $performancefx, $onedrive, $lightmode, $essentialundo, $EActionCenter, $ECortana, $RBackgroundApps, $HTrayIcons, $EClipboardHistory, $ELocation, $InstallOneDrive, $removebloat, $reinstallbloat, $WarningLabel, $Label5, $appearancefx, $STrayIcons, $EHibernation, $dualboottime))
 $Panel3.controls.AddRange(@($updateapps, $ncpa, $oldcontrolpanel, $oldsoundpanel, $oldsystempanel, $NFS, $laptopnumlock, $Virtualization, $oldpower, $restorepower))
 $Panel4.controls.AddRange(@($defaultwindowsupdate, $securitywindowsupdate, $Label16, $Label17, $Label18, $Label19, $windowsupdatefix, $disableupdates, $enableupdates, $Label12))
@@ -1273,15 +1273,21 @@ $itunes.Add_Click({
     $ResultText.text = "`r`n" + "Finished Installing iTunes" + "`r`n" + "`r`n" + "Ready for Next Task"
 })
 
-$vscodium.Add_Click({
-    Write-Host "Installing VS Codium"
-    $ResultText.text = "`r`n" + "`r`n" + "Installing VS Codium... Please Wait"
-    cinst vscodium --verbose --no-color --accept-license --confirm | Out-Host
-    if ($?)
+$gamelaunchers.Add_Click({
+    Write-Host "Game Launchers"
+    $ResultText.text = "`r`n" + "`r`n" + "Installing VS Game Luanchers... Please Wait"
+    choco install playnite --verbose --no-color --accept-license --confirm | Out-Host
+    choco install steam-client --verbose --no-color --accept-license --confirm | Out-Host
+    choco install epicgameslauncher --verbose --no-color --accept-license --confirm | Out-Host
+    choco install battle.net --verbose --no-color --accept-license --confirm | Out-Host
+    choco install rockstar-launcher --verbose --no-color --accept-license --confirm | Out-Host
+    choco install goggalaxy --verbose --no-color --accept-license --confirm | Out-Host
+    choco install ubisoft-connect --verbose --no-color --accept-license --confirm | Out-Host
+    
     {
-        Write-Host "Installed VS Codium"
+        Write-Host "Installed Game Launchers"
     }
-    $ResultText.text = "`r`n" + "Finished Installing VS Codium" + "`r`n" + "`r`n" + "Ready for Next Task"
+    $ResultText.text = "`r`n" + "Finished Installing Game Launchers" + "`r`n" + "`r`n" + "Ready for Next Task"
 })
 
 $vscode.Add_Click({
